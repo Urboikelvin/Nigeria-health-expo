@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nigeria Health Expo 2027 — 26–28 April 2027, Lagos</title>
+<meta name="description" content="Nigeria Health Expo 2027 — Connecting Global Innovation With Africa’s Healthcare Needs. Exhibition and conference, 26–28 April 2027, Oriental Hotel, Victoria Island, Lagos.">
+<meta property="og:title" content="Nigeria Health Expo 2027">
+<meta property="og:description" content="Connecting Global Innovation With Africa’s Healthcare Needs. 26–28 April 2027, Oriental Hotel, Victoria Island, Lagos.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#061A16">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:oklch(0.20 0.027 180);--navy-2:oklch(0.27 0.033 180);--green:oklch(0.51 0.13 160);--green-d:oklch(0.44 0.11 160);--lime:oklch(0.93 0.19 120);
+  --ink:oklch(0.23 0.02 180);--ink-2:oklch(0.47 0.02 180);--line:oklch(0.9 0.008 180);--soft:oklch(0.97 0.006 180);--white:oklch(1 0 0);
+  --hero-shade:linear-gradient(90deg, color-mix(in oklab,var(--navy) 94%,transparent),color-mix(in oklab,var(--navy) 70%,transparent) 43%,color-mix(in oklab,var(--navy) 12%,transparent)),linear-gradient(0deg,var(--navy),transparent 55%);
+  --surface-glass:color-mix(in oklab,var(--white) 8%,transparent);--line-dark:color-mix(in oklab,var(--white) 18%,transparent);
+  --wrap:1440px;--r:8px;
+  --font:"Plus Jakarta Sans",system-ui,sans-serif;--serif:"Instrument Serif",Georgia,serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--font);color:var(--ink);background:#fff;font-size:16px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{margin:0;line-height:1.05;letter-spacing:0;font-weight:800}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;height:auto}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+@media(min-width:768px){.wrap{padding:0 40px}}
+.serif{font-family:var(--serif);font-weight:400;font-style:italic;letter-spacing:0}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.75rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--green-d)}
+.eyebrow::before{content:"";width:28px;height:2px;background:currentColor}
+.on-dark .eyebrow{color:var(--lime)}
+.h2{font-size:clamp(2rem,4.6vw,3.6rem)}
+.lead{font-size:clamp(1rem,1.3vw,1.15rem);color:var(--ink-2);max-width:620px}
+.on-dark .lead{color:rgba(255,255,255,.72)}
+.sec{padding:clamp(72px,10vw,140px) 0}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:24px;margin-bottom:clamp(36px,5vw,64px)}
+.sec-head .h2{margin-top:16px;max-width:760px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;height:54px;padding:0 28px;border-radius:999px;font-weight:700;font-size:.95rem;border:0;cursor:pointer;font-family:inherit;transition:.25s ease;white-space:nowrap}
+.btn svg{width:16px;height:16px;transition:transform .25s}
+.btn:hover svg{transform:translate(3px,-3px)}
+.btn-lime{background:var(--lime);color:var(--navy)}
+.btn-lime:hover{background:#fff}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:var(--navy)}
+.btn-line{color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.4)}
+.btn-line:hover{background:#fff;color:var(--navy)}
+.btn-dark{background:var(--navy);color:#fff}
+.btn-dark:hover{background:var(--green)}
+.btn-sm{height:44px;padding:0 20px}
+
+/* top bar + header */
+.topbar{background:var(--navy);color:rgba(255,255,255,.75);font-size:.8rem}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:40px;gap:16px}
+.topbar b{color:#fff;font-weight:600}
+.topbar .tb-r{display:none;gap:22px}
+.topbar a:hover{color:var(--lime)}
+@media(min-width:900px){.topbar .tb-r{display:flex}}
+.hdr{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:0;line-height:1}
+.logo-mark{width:42px;height:42px;border-radius:12px;background:var(--navy);display:grid;place-items:center;position:relative;overflow:hidden}
+.logo-mark::after{content:"";position:absolute;inset:auto -8px -14px auto;width:30px;height:30px;border-radius:50%;background:var(--green)}
+.logo-mark svg{width:22px;height:22px;position:relative;z-index:1}
+.logo span{font-size:1.1rem}
+.logo small{display:block;font-size:.66rem;font-weight:600;letter-spacing:.18em;color:var(--ink-2);margin-top:4px;text-transform:uppercase}
+.nav{display:none;gap:2px}
+.nav a{padding:10px 14px;border-radius:999px;font-weight:600;font-size:.92rem;color:var(--ink-2);transition:.2s}
+.nav a:hover{color:var(--ink);background:var(--soft)}
+.hdr-cta{display:flex;gap:10px;align-items:center}
+.hdr-cta .btn-line2{display:none;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--line)}
+.hdr-cta .btn-line2:hover{box-shadow:inset 0 0 0 1.5px var(--ink)}
+.burger{width:44px;height:44px;border-radius:12px;border:1px solid var(--line);background:#fff;display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:18px;height:2px;background:var(--ink);box-shadow:0 6px 0 var(--ink),0 -6px 0 var(--ink)}
+@media(min-width:1080px){.nav{display:flex}.burger{display:none}.hdr-cta .btn-line2{display:inline-flex}}
+.mnav{display:none;position:fixed;inset:116px 0 0;background:#fff;z-index:99;padding:24px 20px;flex-direction:column;gap:4px;overflow:auto}
+.mnav.open{display:flex}
+.mnav a{padding:16px 4px;font-size:1.4rem;font-weight:700;border-bottom:1px solid var(--line)}
+.mnav .btn{margin-top:20px;justify-content:center}
+
+/* hero */
+.hero{position:relative;color:#fff;background:var(--navy);overflow:hidden;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-2}
+.hero-bg img{width:100%;height:100%;object-fit:cover;transform:scale(1.05);animation:kb 22s ease-out forwards}
+@keyframes kb{to{transform:scale(1)}}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--hero-shade)}
+.hero .wrap{padding-top:clamp(72px,10vw,140px);padding-bottom:40px}
+.hero-tag{display:inline-flex;align-items:center;gap:10px;padding:8px 16px 8px 8px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);font-size:.82rem;font-weight:600;backdrop-filter:blur(8px)}
+.hero-tag b{background:var(--lime);color:var(--navy);padding:4px 10px;border-radius:999px;font-size:.7rem;letter-spacing:.08em}
+.hero h1{font-size:clamp(2.8rem,8vw,6.6rem);margin:28px 0 24px;max-width:1000px;letter-spacing:0}
+.hero h1 .serif{color:var(--lime);font-size:1.05em}
+.hero p.lead{color:rgba(255,255,255,.78);font-size:clamp(1.05rem,1.5vw,1.25rem);max-width:600px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.hero-meta{margin-top:clamp(56px,8vw,110px);display:grid;grid-template-columns:1fr;border-top:1px solid rgba(255,255,255,.14)}
+.hero-meta>div{padding:22px 0;display:flex;gap:14px;align-items:center;border-bottom:1px solid rgba(255,255,255,.14)}
+.hero-meta svg{width:22px;height:22px;color:var(--lime);flex:none}
+.hero-meta small{display:block;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55);font-weight:600}
+.hero-meta strong{font-size:1.02rem}
+@media(min-width:900px){.hero-meta{grid-template-columns:repeat(3,1fr) 1.3fr}.hero-meta>div{border-bottom:0;border-right:1px solid rgba(255,255,255,.14);padding:28px 24px}.hero-meta>div:first-child{padding-left:0}.hero-meta>div:last-child{border-right:0}}
+.cd{display:flex;gap:clamp(12px,2vw,22px)}
+.cd div{text-align:center}
+.cd b{display:block;font-size:clamp(1.6rem,2.6vw,2.2rem);font-weight:800;letter-spacing:0;line-height:1;font-variant-numeric:tabular-nums}
+.cd span{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.55);font-weight:600}
+
+/* ticker */
+.ticker{background:var(--lime);color:var(--navy);overflow:hidden;padding:18px 0;font-weight:800;font-size:clamp(1rem,1.6vw,1.3rem);letter-spacing:0}
+.ticker-t{display:flex;gap:40px;width:max-content;animation:tk 40s linear infinite}
+.ticker-t span{display:flex;align-items:center;gap:40px;white-space:nowrap}
+.ticker-t span::after{content:"✦";font-size:.8em}
+@keyframes tk{to{transform:translateX(-50%)}}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.stat{background:#fff;padding:clamp(24px,3vw,40px)}
+.stat b{display:block;font-size:clamp(2.4rem,5vw,4.2rem);letter-spacing:0;font-weight:800;line-height:1}
+.stat b i{font-style:normal;color:var(--green)}
+.stat span{display:block;margin-top:10px;color:var(--ink-2);font-weight:500;font-size:.95rem}
+@media(min-width:900px){.stats{grid-template-columns:repeat(4,1fr)}}
+
+/* about split */
+.split{display:grid;gap:clamp(40px,6vw,80px);align-items:center}
+@media(min-width:960px){.split{grid-template-columns:1.05fr 1fr}}
+.photo{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3}
+.photo img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.photo:hover img{transform:scale(1.04)}
+.photo-badge{position:absolute;left:20px;bottom:20px;background:#fff;border-radius:16px;padding:16px 20px;display:flex;align-items:center;gap:14px;box-shadow:0 20px 40px -12px rgba(6,20,46,.35)}
+.photo-badge b{font-size:1.8rem;letter-spacing:0;color:var(--green)}
+.photo-badge span{font-size:.82rem;color:var(--ink-2);line-height:1.3;font-weight:600}
+.checks{list-style:none;padding:0;margin:32px 0 36px;display:grid;gap:14px}
+.checks li{display:flex;gap:14px;font-weight:600}
+.checks li::before{content:"";flex:none;width:24px;height:24px;border-radius:50%;background:var(--green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'%3E%3Cpath d='M6 12l4 4 8-8'/%3E%3C/svg%3E") center/14px no-repeat}
+
+/* sectors */
+.sectors{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:640px){.sectors{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.sectors{grid-template-columns:repeat(4,1fr)}}
+.sector{position:relative;padding:28px;border-radius:var(--r);background:#fff;border:1px solid var(--line);min-height:230px;display:flex;flex-direction:column;justify-content:space-between;transition:.3s;overflow:hidden}
+.sector:hover{background:var(--navy);color:#fff;transform:translateY(-4px);border-color:var(--navy)}
+.sector .n{font-size:.78rem;font-weight:700;color:var(--ink-2);letter-spacing:.1em}
+.sector:hover .n{color:var(--lime)}
+.sector .ic{width:52px;height:52px;border-radius:14px;background:var(--soft);display:grid;place-items:center;color:var(--green);transition:.3s}
+.sector:hover .ic{background:var(--lime);color:var(--navy)}
+.sector .ic svg{width:26px;height:26px}
+.sector h3{font-size:1.25rem;letter-spacing:0;margin-top:28px}
+.sector p{font-size:.9rem;color:var(--ink-2);margin-top:8px}
+.sector:hover p{color:rgba(255,255,255,.7)}
+
+/* audience dark */
+.dark{background:var(--navy);color:#fff}
+.aud{display:grid;gap:16px}
+@media(min-width:900px){.aud{grid-template-columns:repeat(2,1fr)}}
+.aud-card{position:relative;border-radius:var(--r);overflow:hidden;min-height:520px;display:flex;align-items:flex-end;isolation:isolate}
+.aud-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .8s}
+.aud-card:hover img{transform:scale(1.05)}
+.aud-card::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(6,20,46,.95) 15%,rgba(6,20,46,.2) 70%)}
+.aud-body{padding:clamp(24px,4vw,44px)}
+.aud-body .tag{display:inline-block;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.12);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;backdrop-filter:blur(6px)}
+.aud-body h3{font-size:clamp(1.8rem,3vw,2.6rem);margin:16px 0 12px}
+.aud-body p{color:rgba(255,255,255,.75);max-width:460px;margin-bottom:24px}
+
+/* programme */
+.ptabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.ptabs button{font-family:inherit;border:1px solid var(--line);background:#fff;padding:14px 22px;border-radius:999px;font-weight:700;cursor:pointer;text-align:left;transition:.2s;color:var(--ink)}
+.ptabs button small{display:block;font-weight:500;font-size:.75rem;color:var(--ink-2)}
+.ptabs button[aria-selected=true]{background:var(--navy);color:#fff;border-color:var(--navy)}
+.ptabs button[aria-selected=true] small{color:var(--lime)}
+.sessions{border-top:1px solid var(--line)}
+.sess{display:grid;grid-template-columns:1fr;gap:6px 32px;padding:26px 0;border-bottom:1px solid var(--line);transition:.2s}
+.sess:hover{background:var(--soft);padding-left:16px;padding-right:16px;border-radius:12px}
+.sess time{font-weight:700;color:var(--green-d);font-variant-numeric:tabular-nums}
+.sess h4{font-size:1.2rem;letter-spacing:0}
+.sess p{color:var(--ink-2);font-size:.92rem;margin-top:4px}
+.sess .loc{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+@media(min-width:800px){.sess{grid-template-columns:160px 1fr 180px;align-items:center}.sess .loc{text-align:right}}
+
+/* speakers */
+.spk-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+@media(min-width:900px){.spk-grid{grid-template-columns:repeat(4,1fr)}}
+.spk .av{aspect-ratio:4/5;border-radius:var(--r);background:linear-gradient(160deg,#E9EEF5,#D6DEEA);display:grid;place-items:center;overflow:hidden;position:relative}
+.spk .av svg{width:46%;color:#A9B6C9}
+.spk .av::after{content:"Photo coming soon";position:absolute;bottom:14px;left:14px;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);background:#fff;padding:5px 10px;border-radius:999px}
+.spk h4{margin-top:16px;font-size:1.1rem;letter-spacing:0}
+.spk p{font-size:.88rem;color:var(--ink-2)}
+
+/* conference band */
+.band{display:grid;gap:0;border-radius:28px;overflow:hidden;background:var(--navy);color:#fff}
+@media(min-width:960px){.band{grid-template-columns:1fr 1fr}}
+.band img{width:100%;height:100%;object-fit:cover;min-height:320px}
+.band-b{padding:clamp(32px,5vw,72px);display:flex;flex-direction:column;justify-content:center}
+.band-b .h2{margin:16px 0 20px}
+
+/* packages */
+.pk-grid{display:grid;gap:16px}
+@media(min-width:960px){.pk-grid{grid-template-columns:repeat(3,1fr);align-items:stretch}}
+.pk{border:1px solid var(--line);border-radius:24px;padding:36px;display:flex;flex-direction:column;background:#fff;position:relative}
+.pk.feat{background:var(--navy);color:#fff;border-color:var(--navy)}
+.pk .badge{position:absolute;top:24px;right:24px;background:var(--lime);color:var(--navy);font-size:.7rem;font-weight:800;padding:6px 12px;border-radius:999px;letter-spacing:.06em;text-transform:uppercase}
+.pk h3{font-size:1.4rem}
+.pk .price{font-size:2.6rem;font-weight:800;letter-spacing:0;margin:20px 0 6px}
+.pk .price small{font-size:.9rem;font-weight:500;color:var(--ink-2);letter-spacing:0}
+.pk.feat .price small{color:rgba(255,255,255,.6)}
+.pk>p{color:var(--ink-2);font-size:.92rem}
+.pk.feat>p{color:rgba(255,255,255,.7)}
+.pk ul{list-style:none;padding:24px 0 0;margin:24px 0 32px;border-top:1px solid var(--line);display:grid;gap:12px;flex:1}
+.pk.feat ul{border-color:rgba(255,255,255,.14)}
+.pk li{display:flex;gap:12px;font-size:.94rem;font-weight:500}
+.pk li::before{content:"✓";color:var(--green);font-weight:800}
+.pk.feat li::before{color:var(--lime)}
+.pk .btn{justify-content:center}
+
+/* testimonials */
+.quotes{display:grid;gap:16px}
+@media(min-width:900px){.quotes{grid-template-columns:repeat(3,1fr)}}
+.q{background:var(--soft);border-radius:var(--r);padding:32px;display:flex;flex-direction:column;justify-content:space-between;gap:28px}
+.q blockquote{margin:0;font-family:var(--serif);font-size:1.5rem;line-height:1.3;letter-spacing:0}
+.q cite{font-style:normal;font-weight:700;font-size:.9rem}
+.q cite span{display:block;font-weight:500;color:var(--ink-2)}
+
+/* partners */
+.partners{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.partners div{background:#fff;height:110px;display:grid;place-items:center;font-weight:800;color:#B3BDCC;letter-spacing:.06em;font-size:.85rem;transition:.2s}
+.partners div:hover{color:var(--ink)}
+@media(min-width:800px){.partners{grid-template-columns:repeat(6,1fr)}}
+
+/* register */
+.reg{display:grid;gap:clamp(40px,6vw,80px)}
+@media(min-width:960px){.reg{grid-template-columns:1fr 1.1fr;align-items:start}}
+.formbox{background:#fff;color:var(--ink);border-radius:28px;padding:clamp(24px,4vw,44px)}
+.tabs{display:grid;grid-template-columns:1fr 1fr;background:var(--soft);border-radius:999px;padding:6px;margin-bottom:28px}
+.tabs button{font-family:inherit;border:0;background:transparent;height:46px;border-radius:999px;font-weight:700;cursor:pointer;color:var(--ink-2);font-size:.95rem}
+.tabs button[aria-selected=true]{background:var(--navy);color:#fff}
+.fg{display:grid;gap:16px}
+@media(min-width:600px){.fg{grid-template-columns:1fr 1fr}.full{grid-column:1/-1}}
+.field label{display:block;font-size:.8rem;font-weight:700;margin-bottom:8px}
+.field input,.field select,.field textarea{width:100%;height:52px;border:1.5px solid var(--line);border-radius:12px;padding:0 16px;font-family:inherit;font-size:16px;background:#fff;color:var(--ink);transition:.2s}
+.field textarea{height:110px;padding:14px 16px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--green);box-shadow:0 0 0 4px rgba(0,168,107,.14)}
+.field.err input,.field.err select{border-color:#DC2626}
+.form-foot{margin-top:24px;display:grid;gap:12px}
+.form-foot .btn{justify-content:center;width:100%}
+.form-foot small{color:var(--ink-2);text-align:center}
+.ok{display:none;text-align:center;padding:40px 10px}
+.ok.show{display:block}
+.ok .ic{width:64px;height:64px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;margin:0 auto 18px;font-size:1.8rem}
+.ok h3{font-size:1.6rem;margin-bottom:8px}
+.ok p{color:var(--ink-2)}
+
+/* venue */
+.venue{position:relative;border-radius:28px;overflow:hidden;color:#fff;isolation:isolate;min-height:560px;display:flex;align-items:flex-end}
+.venue>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.venue::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(6,20,46,.95),rgba(6,20,46,.15) 70%)}
+.venue-b{padding:clamp(28px,5vw,64px);display:grid;gap:32px;width:100%}
+@media(min-width:900px){.venue-b{grid-template-columns:1.2fr 1fr;align-items:end}}
+.venue-b .h2{margin:16px 0}
+.vinfo{display:grid;gap:12px}
+.vinfo div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(10px);border-radius:16px;padding:18px 20px}
+.vinfo small{display:block;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--lime);font-weight:700}
+.vinfo strong{font-weight:600}
+
+/* faq */
+.faq{display:grid;gap:clamp(32px,5vw,80px)}
+@media(min-width:960px){.faq{grid-template-columns:1fr 1.5fr}}
+details{border-bottom:1px solid var(--line);padding:24px 0}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;font-weight:700;font-size:1.12rem;letter-spacing:0}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.6rem;line-height:1;color:var(--green);transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--ink-2);margin-top:12px;max-width:640px}
+
+/* cta + footer */
+.cta{background:var(--green);color:#fff;border-radius:28px;padding:clamp(40px,6vw,80px);display:grid;gap:28px;position:relative;overflow:hidden}
+.cta::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;border:80px solid rgba(255,255,255,.08)}
+.cta h2{font-size:clamp(2rem,5vw,4rem);max-width:760px}
+.cta .row{display:flex;gap:12px;flex-wrap:wrap;position:relative;z-index:1}
+.ftr{background:var(--navy);color:rgba(255,255,255,.65);padding:clamp(64px,8vw,100px) 0 32px;margin-top:clamp(72px,10vw,140px)}
+.ftr-g{display:grid;gap:40px}
+@media(min-width:900px){.ftr-g{grid-template-columns:1.6fr 1fr 1fr 1fr}}
+.ftr .logo{color:#fff}
+.ftr .logo small{color:rgba(255,255,255,.5)}
+.ftr h4{color:#fff;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px}
+.ftr ul{list-style:none;padding:0;margin:0;display:grid;gap:10px;font-size:.94rem}
+.ftr a:hover{color:var(--lime)}
+.news{display:flex;gap:8px;margin-top:24px;max-width:420px}
+.news input{flex:1;min-width:0;height:50px;border-radius:999px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#fff;padding:0 20px;font-family:inherit;font-size:16px}
+.news input::placeholder{color:rgba(255,255,255,.45)}
+.ftr-b{margin-top:64px;padding-top:28px;border-top:1px solid rgba(255,255,255,.1);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:.84rem}
+.wa{position:fixed;right:20px;bottom:20px;z-index:90;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(37,211,102,.7);transition:transform .2s}
+.wa:hover{transform:scale(1.08)}
+.wa svg{width:30px;height:30px;color:#fff}
+
+/* sticky mobile cta */
+.mcta{position:fixed;left:0;right:0;bottom:0;z-index:95;display:none;gap:10px;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line)}
+.mcta .btn{flex:1;height:48px;font-size:13px;padding-inline:10px}
+@media(max-width:767px){.mcta.armed{display:flex}.mcta-on .ftr{padding-bottom:104px}}
+.ok h3:focus{outline:none}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+
+/* staggered programme rows */
+.sessions .sess{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s cubic-bezier(.2,.7,.2,1)}
+.sessions.in .sess{opacity:1;transform:none}
+.sessions.in .sess:nth-child(2){transition-delay:.08s}
+.sessions.in .sess:nth-child(3){transition-delay:.16s}
+.sessions.in .sess:nth-child(4){transition-delay:.24s}
+
+/* parallax photos */
+.prlx-t{will-change:transform}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.sessions .sess{opacity:1;transform:none}}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+
+/* Editorial refinement and device layouts */
+[hidden]{display:none!important}
+html{scroll-padding-top:100px}
+.wrap{padding-inline:32px}
+h1,h2,h3,h4,.serif{letter-spacing:0}
+.h2{font-size:48px;line-height:1.13}
+.lead{font-size:17px;line-height:1.8}
+.sec{padding:96px 0}
+.sec-head{margin-bottom:44px;align-items:end}
+.sec-head>.lead{max-width:400px}
+.btn{border-radius:4px;height:54px;padding-inline:24px;justify-content:center}
+.btn-sm{height:44px;padding-inline:18px;font-size:13px}
+.btn-green,.btn-dark,.btn-line{color:var(--white)}
+.btn-lime:hover,.btn-line:hover{background:var(--white)}
+.btn-green:hover{background:var(--navy)}
+.topbar{background:var(--navy);font-size:11px}
+.topbar .wrap{height:34px}
+.hdr .wrap{height:88px}
+.logo{gap:10px;flex-shrink:0}
+.logo span{font-size:17px}
+.logo small{font-size:9px;letter-spacing:.12em}
+.logo-mark{border-radius:4px;background:var(--green);width:40px;height:44px}
+.logo-mark::after{display:none}
+.logo-mark svg{stroke:var(--lime)}
+.nav a{font-size:12px;padding:10px;border-radius:4px}
+.nav a.active{color:var(--ink);background:var(--soft)}
+.hdr-cta{gap:8px}
+.hero .wrap{padding-top:68px;padding-bottom:0}
+.hero-bg img{object-position:center 45%;animation:none;transform:none}
+.hero-tag{border:0;background:none;padding:0;gap:14px;backdrop-filter:none;font-size:11px;letter-spacing:.03em}
+.hero-tag b{border-radius:2px;padding:6px 9px;font-size:9px;letter-spacing:.1em}
+.hero h1{font-size:100px;line-height:.98;max-width:770px;margin:30px 0 24px;font-weight:700}
+.hero h1 .serif{font-size:1.08em}
+.hero p.lead{font-size:16px;max-width:460px;line-height:1.8}
+.hero-ctas{margin-top:28px}
+.hero-meta{margin-top:58px;grid-template-columns:1fr 1.35fr 1fr;border-color:var(--line-dark)}
+.hero-meta>div{padding:24px;border-bottom:0;border-right:1px solid var(--line-dark)}
+.hero-meta>div:first-child{padding-left:0}
+.hero-meta>div:nth-child(3){border-right:0}
+.hero-meta strong{font-size:13px;font-weight:600}
+.hero-meta small{font-size:9px;margin-bottom:5px}
+.hero-meta svg{width:19px;height:19px}
+.ticker{padding:17px 0;font-size:13px;font-weight:600}
+.stats{border-radius:0;border:0;background:var(--line);gap:1px}
+.stat{padding:12px 36px}
+.stat:first-child{padding-left:0}
+.stat b{font-size:54px;font-weight:700}
+.stat span{font-size:12px;margin-top:12px}
+.split{gap:72px}
+.photo{border-radius:4px;aspect-ratio:5/4}
+.photo-badge{border-radius:4px;box-shadow:none;padding:12px 18px}
+.sector{padding:26px;min-height:240px;border-radius:4px}
+.sector h3{font-size:18px;line-height:1.3}
+.sector p{font-size:13px}
+.sector .ic{border-radius:4px;background:none;place-items:start;width:38px;height:34px}
+.sector .ic svg{width:30px;height:30px}
+.aud-card{border-radius:4px;min-height:480px}
+.aud-body h3{font-size:36px}
+.aud-body .tag{background:none;padding:0;border-radius:0;color:var(--lime)}
+.ptabs button{border-radius:4px;padding:16px 26px;min-width:180px}
+.ptabs button small{margin-top:4px;font-size:11px}
+.sess:hover{padding-inline:0;border-radius:0}
+.sess h4{font-size:18px;line-height:1.35}
+.band{border-radius:4px}
+.band-b .h2{font-size:42px}
+.pk{border-radius:4px;padding:30px}
+.pk h3{font-size:22px;padding-top:18px}
+.pk .badge{border-radius:2px;top:0;right:24px;padding:6px 10px;font-size:9px}
+.pk .price{font-size:36px;line-height:1.3}
+.pk .price small{display:block;font-size:13px;margin-top:6px}
+.pk li{font-size:13px}
+.pk>p{font-size:14px;line-height:1.8}
+.formbox{border-radius:8px}
+.tabs{border-radius:4px;padding:4px}
+.tabs button{border-radius:3px;font-size:13px}
+.field input,.field select,.field textarea{border-radius:4px}
+.venue{border-radius:4px}
+.vinfo div{border-radius:4px;background:var(--surface-glass);border-color:var(--line-dark)}
+summary{font-size:17px;line-height:1.5}
+.cta{border-radius:4px;background:var(--green);padding:64px}
+.cta h2{font-size:52px;line-height:1.12}
+.cta::after{display:none}
+.ftr{margin-top:96px;padding-top:72px}
+.ftr .logo span{font-size:16px}
+.ftr p,.ftr ul{font-size:13px}
+.news input{border-radius:4px;padding-inline:14px}
+.news .btn{padding-inline:14px;font-size:12px}
+.burger{border-radius:4px;flex-shrink:0}
+.burger[aria-expanded=true] span{box-shadow:none;transform:rotate(45deg)}
+.burger[aria-expanded=true] span::after{content:"";display:block;width:18px;height:2px;background:var(--ink);transform:rotate(90deg)}
+.mnav{inset:var(--menu-top,122px) 0 0;padding:24px 32px}
+.mnav a{font-size:24px}
+@media(min-width:1080px) and (max-width:1240px){.hdr-cta .btn-line2{display:none}.nav a{padding:10px 8px}.logo span{font-size:15px}}
+@media(min-width:900px){.stats{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:1079px){.hdr .wrap{height:76px}.hero h1{font-size:82px}.hero .wrap{padding-top:60px}.h2{font-size:40px}.sec{padding:72px 0}.split{gap:40px}.stat{padding:20px}.stat b{font-size:44px}.ftr-g{grid-template-columns:2fr 1fr 1fr}.ftr-g>div:last-child{grid-column:1/-1}.band-b .h2{font-size:36px}}
+@media(max-width:767px){
+.wrap{padding-inline:22px}
+.topbar .wrap{height:auto;min-height:32px;padding-block:7px}.topbar{font-size:9px}
+.hdr .wrap{height:70px;gap:8px}.logo span{font-size:13px}.logo small{font-size:7px}.logo-mark{width:30px;height:34px}.logo-mark svg{width:18px}.logo{gap:7px}
+.hdr-cta>.btn{display:none}.burger{width:40px;height:40px}
+.hero .wrap{padding-top:42px}.hero h1{font-size:64px;margin:26px 0 22px;line-height:1}
+.hero-tag{flex-wrap:wrap;gap:10px;font-size:10px;max-width:300px}.hero-tag b{font-size:8px}
+.hero-bg img{object-position:60% center}.hero::before{background:linear-gradient(90deg,color-mix(in oklab,var(--navy) 90%,transparent),color-mix(in oklab,var(--navy) 58%,transparent)),linear-gradient(0deg,var(--navy),transparent 70%)}
+.hero p.lead{font-size:14px;max-width:340px}.hero-ctas{gap:10px;margin-top:24px}.hero-ctas .btn{font-size:11px;padding-inline:14px;height:48px;gap:7px}
+.hero-meta{margin-top:38px;grid-template-columns:1fr 1fr}.hero-meta>div{padding:16px 0;gap:10px;border-right:0;align-items:start}.hero-meta>div:nth-child(2){padding-left:14px}.hero-meta>div:nth-child(3){grid-column:1/-1;border-top:1px solid var(--line-dark);padding:13px 0;align-items:center}.hero-meta>div:nth-child(3)>div{display:flex;gap:12px;align-items:center}.hero-meta>div:nth-child(3) small{margin:0}.hero-meta strong{font-size:11px;line-height:1.5;display:block}.hero-meta small{font-size:8px}.hero-meta svg{width:17px;height:17px}
+.ticker{font-size:11px;padding:14px 0}.ticker-t,.ticker-t span{gap:26px}
+.sec{padding:56px 0}.h2{font-size:32px;line-height:1.16}.lead{font-size:14px;line-height:1.8}.sec-head{gap:20px;margin-bottom:28px}.eyebrow{font-size:9px;letter-spacing:.14em}
+.stats{grid-template-columns:repeat(2,minmax(0,1fr));border-bottom:1px solid var(--line)}.stat,.stat:first-child{padding:22px 12px}.stat:nth-child(odd){padding-left:0}.stat b{font-size:38px}.stat span{font-size:11px;margin-top:8px}.stat:nth-child(n+3){border-top:1px solid var(--line)}
+.split{gap:32px;margin-top:56px!important}.checks{margin:24px 0;gap:12px}.checks li{font-size:13px;line-height:1.6}.checks li::before{width:20px;height:20px;margin-top:1px}
+.photo-badge{left:14px;bottom:14px}.photo-badge b{font-size:28px}
+.sectors{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.sector{padding:18px 14px;min-height:220px}.sector h3{font-size:15px;overflow-wrap:anywhere;margin-top:20px}.sector p{font-size:11px;line-height:1.7}.sector .n{font-size:10px;margin-top:18px}
+.aud{gap:16px}.aud-card{min-height:390px}.aud-body{padding:26px}.aud-body h3{font-size:30px}.aud-body p{font-size:13px}.aud-body .tag{font-size:10px}
+.ptabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.ptabs button{min-width:0;padding:12px 9px;font-size:12px}.ptabs button small{font-size:9px;line-height:1.5}
+.sess{gap:8px;padding:22px 0}.sess h4{font-size:16px}.sess p{font-size:12px}.sess time{font-size:12px}.sess .loc{font-size:9px;margin-top:4px}
+.band img{min-height:0;aspect-ratio:4/3}.band-b{padding:28px}.band-b .h2{font-size:30px}.band-b .lead{font-size:13px}
+.pk{padding:26px}.pk h3{font-size:21px}.pk .price{font-size:32px}.pk .price small{display:inline;margin-left:8px}.pk li{font-size:13px}.pk .btn{width:100%}
+.reg{gap:28px}.formbox{padding:22px}.fg{gap:14px}.field label{font-size:11px}.tabs button{font-size:11px}.form-foot small{font-size:10px}.form-foot .btn{font-size:13px}
+.venue{min-height:560px}.venue-b{padding:26px;gap:24px}.vinfo div{padding:14px}.vinfo strong{font-size:12px;line-height:1.6}.vinfo small{font-size:9px}.faq{gap:22px}summary{font-size:14px}details{padding:20px 0}details p{font-size:13px}
+.cta{padding:32px 24px}.cta h2{font-size:34px}.cta .row{gap:10px}.cta .btn{font-size:11px;padding-inline:14px;height:46px}
+.ftr{margin-top:56px;padding-top:48px}.ftr-g{grid-template-columns:1fr 1fr;gap:32px}.ftr-g>div:first-child,.ftr-g>div:last-child{grid-column:1/-1}.ftr h4{font-size:10px}.ftr-b{font-size:10px;margin-top:40px}.news{max-width:100%}.mnav{padding-inline:22px}html{scroll-padding-top:86px}
+}
+@media(max-width:359px){.wrap{padding-inline:18px}.hero h1{font-size:56px}.hero-ctas{flex-direction:column;align-items:stretch}.hero-ctas .btn{font-size:12px}.h2{font-size:28px}.sector{padding:14px 11px}.sector h3{font-size:13px}.formbox{padding:18px}.cta .row{flex-direction:column}.hero-meta strong{font-size:10px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ticker-t{animation:none}.rv{opacity:1;transform:none}}
+
+/* Nigeria Health Expo 2027 content blocks */
+.vm{display:grid;gap:22px;margin:32px 0 36px}
+.vm>div{border-left:2px solid var(--green);padding-left:20px}
+.vm h3{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--green-d);margin-bottom:8px;font-weight:700}
+.vm p{color:var(--ink-2);font-size:15px;line-height:1.75}
+.sectors.five>.sector{min-height:280px}
+.sectors.five .n{margin-top:24px}
+.aud-card{min-height:600px}
+.aud-card::before{background:linear-gradient(0deg,color-mix(in oklab,var(--navy) 97%,transparent) 42%,color-mix(in oklab,var(--navy) 72%,transparent) 72%,color-mix(in oklab,var(--navy) 30%,transparent))}
+@media(max-width:1199px){.sectors.five{grid-template-columns:repeat(2,minmax(0,1fr))}.sectors.five>:last-child{grid-column:1/-1;min-height:200px}}
+@media(min-width:1200px){.sectors.five{grid-template-columns:repeat(5,minmax(0,1fr))}}
+.aud-list{list-style:none;padding:0;margin:20px 0 28px;display:grid;gap:12px}
+.aud-list li{font-size:14px;line-height:1.6;color:rgba(255,255,255,.78)}
+.aud-list b{color:#fff;font-weight:700}
+.tracks{display:grid;gap:12px;grid-template-columns:1fr}
+@media(min-width:640px){.tracks{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1000px){.tracks{grid-template-columns:repeat(5,minmax(0,1fr))}}
+.track{border:1px solid var(--line);border-radius:4px;padding:22px;background:#fff;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;transition:.3s}
+.track:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+.track .n{font-size:.78rem;font-weight:700;color:var(--ink-2);letter-spacing:.1em}
+.track:hover .n{color:var(--lime)}
+.track h3{font-size:18px;line-height:1.3}
+.fmt{display:grid;gap:28px;margin-top:56px;grid-template-columns:1fr}
+@media(min-width:700px){.fmt{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1000px){.fmt{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.fmt>div{border-top:2px solid var(--ink);padding-top:18px}
+.fmt h3{font-size:18px;margin-bottom:8px}
+.fmt p{color:var(--ink-2);font-size:14px;line-height:1.7}
+.notice{margin-top:48px;background:var(--soft);border-radius:4px;padding:24px 28px;display:flex;gap:16px;align-items:flex-start}
+.notice svg{width:22px;height:22px;color:var(--green);flex:none;margin-top:2px}
+.notice p{font-size:15px;color:var(--ink-2);line-height:1.7}
+.notice b{color:var(--ink)}
+.pk-grid.two{grid-template-columns:1fr}
+@media(min-width:960px){.pk-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.pk-grid.two .pk{padding-bottom:36px}
+.pk-grid.two .pk h3{margin-bottom:12px}
+.tiers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+@media(min-width:800px){.tiers{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.tiers>div{background:#fff;padding:36px 20px;text-align:center}
+.tiers small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--green-d)}
+.tiers strong{display:block;margin-top:10px;color:#9AA6B8;font-size:15px;font-weight:600}
+.two{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:800px){.two{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.card{border:1px solid var(--line);border-radius:4px;padding:32px;background:#fff}
+.card h3{font-size:22px;line-height:1.3;margin-bottom:10px}
+.card p{color:var(--ink-2)}
+.card small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--green-d);margin-bottom:10px}
+.card h3 a:hover{color:var(--green)}
+#contact .card h3{margin-bottom:0}
+.fnote{font-size:14px;color:var(--ink-2);line-height:1.7;margin-bottom:20px}
+.fnote b{color:var(--ink)}
+.social-l{list-style:none;padding:0;margin:12px 0 0;display:flex;gap:18px;flex-wrap:wrap;font-size:13px}
+@media(max-width:767px){.sectors.five .sector h3{font-size:14px}.sectors.five>.sector{padding-inline:12px}.aud-card{min-height:0}.vm p{font-size:13px}.aud-list li{font-size:13px}.track{min-height:120px;padding:18px}.track h3{font-size:15px}.fmt{margin-top:40px}.notice{padding:18px;margin-top:36px}.notice p{font-size:13px}.card{padding:24px}.card h3{font-size:18px}.tiers>div{padding:26px 12px}.sectors.five>.sector{min-height:200px}.pk-grid.two .pk{padding-bottom:26px}}
+
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c0-3.5 3-6 7-6s7 2.5 7 6M16 4.5a3.5 3.5 0 010 7M18 14c2.5.6 4 2.8 4 6"/></symbol>
+  <symbol id="i-dev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M7 10h2l1.5-3 3 6 1.5-3h2M8 20h8M12 16v4"/></symbol>
+  <symbol id="i-lab" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3h6M10 3v6l-5 9a2 2 0 002 3h10a2 2 0 002-3l-5-9V3M7 15h10"/></symbol>
+  <symbol id="i-pill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="8.5" width="19" height="7" rx="3.5" transform="rotate(-45 12 12)"/><path d="M8.5 8.5l7 7"/></symbol>
+  <symbol id="i-chip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></symbol>
+  <symbol id="i-hosp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M12 8v6M9 11h6M10 21v-4h4v4"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 00-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 000-7.8z"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18M7 15l4-4 3 3 6-7"/></symbol>
+  <symbol id="i-gov" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10l9-6 9 6M5 10v9M19 10v9M9 10v9M15 10v9M3 21h18"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-person" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4.5"/><path d="M3 22c0-5 4-8.5 9-8.5s9 3.5 9 8.5z"/></symbol>
+</svg>
+
+<div class="topbar"><div class="wrap">
+  <span><b>26–28 April 2027</b> · Oriental Hotel, Victoria Island, Lagos</span>
+  <div class="tb-r"><a href="#faq">FAQ</a><a href="#venue">Venue</a><a href="#register">Register</a></div>
+</div></div>
+
+<header class="hdr">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Nigeria Health Expo home">
+      <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#C6F432" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+      <span>Nigeria Health Expo<small>Exhibition · Conference</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#about">About</a><a href="#sectors">Exhibition</a><a href="#programme">Conference</a><a href="#sponsors">Sponsors</a><a href="#venue">Venue</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="hdr-cta">
+      <a href="#register" data-tab="exhibit" class="btn btn-sm btn-line2">Book a stand</a>
+      <a href="#register" data-tab="attend" class="btn btn-sm btn-dark">Register now</a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mnav"><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mnav" id="mnav" aria-label="Mobile">
+  <a href="#about">About</a><a href="#sectors">Exhibition</a><a href="#programme">Conference</a><a href="#sponsors">Sponsors</a><a href="#venue">Venue</a><a href="#contact">Contact</a><a href="#faq">FAQ</a>
+  <a href="#register" data-tab="attend" class="btn btn-green">Register now</a>
+</nav>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-bg"><img src="/images/hero.jpg" alt="" width="1920" height="1088" fetchpriority="high"></div>
+  <div class="wrap">
+    <span class="hero-tag rv"><b>EXHIBITION &amp; CONFERENCE</b> Connecting Global Innovation With Africa’s Healthcare Needs</span>
+    <h1 class="rv d1">Nigeria<br>Health Expo<br><span class="serif">2027.</span></h1>
+    <p class="lead rv d2">A 3-day event bringing together healthcare professionals, medical practitioners and industry experts to showcase innovations, share knowledge and explore business opportunities.</p>
+    <div class="hero-ctas rv d3">
+      <a href="#register" data-tab="attend" class="btn btn-lime">Register Now <svg><use href="#i-arrow"/></svg></a>
+      <a href="#register" data-tab="exhibit" class="btn btn-line">Exhibit with Us <svg><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="hero-meta">
+      <div><svg><use href="#i-cal"/></svg><div><small>Dates</small><strong>26–28 April 2027</strong></div></div>
+      <div><svg><use href="#i-pin"/></svg><div><small>Venue</small><strong>Oriental Hotel, Victoria Island, Lagos</strong></div></div>
+      <div><svg><use href="#i-clock"/></svg><div><small>The experience</small><strong>Exhibition &amp; conference</strong></div></div>
+      <div class="countdown-cell" hidden><div class="cd" id="countdown" aria-label="Countdown to opening">
+        <div><b id="cd-d">00</b><span>Days</span></div><div><b id="cd-h">00</b><span>Hrs</span></div><div><b id="cd-m">00</b><span>Min</span></div><div><b id="cd-s">00</b><span>Sec</span></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div class="ticker-t">
+  <span>Medical equipment &amp; devices</span><span>Laboratory technology</span><span>Hospital infrastructure</span><span>Pharmaceuticals &amp; healthcare products</span><span>Digital health</span><span>Health IT</span><span>Telemedicine</span><span>Health financing</span>
+  <span>Medical equipment &amp; devices</span><span>Laboratory technology</span><span>Hospital infrastructure</span><span>Pharmaceuticals &amp; healthcare products</span><span>Digital health</span><span>Health IT</span><span>Telemedicine</span><span>Health financing</span>
+</div></div>
+
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="stats rv">
+      <div class="stat"><b data-count="10000" data-plus>0</b><span>Healthcare professionals to reach</span></div>
+      <div class="stat"><b data-count="3">0</b><span>Days of exhibition &amp; conference</span></div>
+      <div class="stat"><b data-count="5">0</b><span>Exhibition categories</span></div>
+      <div class="stat"><b data-count="5">0</b><span>Conference tracks</span></div>
+    </div>
+
+    <div class="split" style="margin-top:clamp(72px,10vw,140px)">
+      <div class="photo rv"><img src="/images/exhibit.jpg" alt="Exhibitor demonstrating imaging equipment to a visitor" loading="lazy" width="1200" height="912">
+        <div class="photo-badge"><b>3</b><span>days of<br>business</span></div>
+      </div>
+      <div class="rv d1">
+        <span class="eyebrow">About Nigeria Health Expo</span>
+        <h2 class="h2" style="margin:16px 0 20px">A platform for knowledge, <span class="serif">networking</span> and business.</h2>
+        <p class="lead">Nigeria Health Expo is a premier healthcare exhibition and conference company that brings together healthcare professionals, medical practitioners, and industry experts from Nigeria and around the world.</p>
+        <div class="vm">
+          <div><h3>Our vision</h3><p>To become the leading healthcare exhibition and conference company in West Africa, promoting innovation, excellence, and partnerships in the healthcare industry.</p></div>
+          <div><h3>Our mission</h3><p>To provide a platform for healthcare professionals, medical practitioners, and industry experts to share knowledge, showcase innovations, and explore business opportunities in the healthcare sector.</p></div>
+          <div><h3>Why choose us</h3><p>Experience the ultimate healthcare event in Nigeria.</p></div>
+        </div>
+        <a href="#register" data-tab="attend" class="btn btn-green">Register now <svg><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="sectors" style="background:var(--soft)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><span class="eyebrow">Exhibition categories</span><h2 class="h2">Five categories. <span class="serif">One expo.</span></h2></div>
+      <p class="lead">Exhibiting companies across five categories, from medical equipment to digital health.</p>
+    </div>
+    <div class="sectors five">
+      <a class="sector rv" href="#exhibit"><div><span class="ic"><svg><use href="#i-dev"/></svg></span><h3>Medical equipment &amp; devices</h3><p>Medical imaging, diagnostic equipment, surgical instruments, and more.</p></div><span class="n">01</span></a>
+      <a class="sector rv d1" href="#exhibit"><div><span class="ic"><svg><use href="#i-lab"/></svg></span><h3>Laboratory technology</h3></div><span class="n">02</span></a>
+      <a class="sector rv d2" href="#exhibit"><div><span class="ic"><svg><use href="#i-hosp"/></svg></span><h3>Hospital infrastructure</h3></div><span class="n">03</span></a>
+      <a class="sector rv d3" href="#exhibit"><div><span class="ic"><svg><use href="#i-pill"/></svg></span><h3>Pharmaceuticals &amp; healthcare products</h3><p>Pharmaceuticals, medical devices, and healthcare products.</p></div><span class="n">04</span></a>
+      <a class="sector rv" href="#exhibit"><div><span class="ic"><svg><use href="#i-chip"/></svg></span><h3>Healthcare services &amp; solutions</h3><p>Digital health, health IT, healthcare software, telemedicine, and health financing.</p></div><span class="n">05</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="offer">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><span class="eyebrow">What we offer</span><h2 class="h2">Built for <span class="serif">business.</span></h2></div>
+    </div>
+    <div class="sectors five">
+      <div class="sector rv"><div><span class="ic"><svg><use href="#i-hosp"/></svg></span><h3>Exhibition space</h3><p>Showcase your products and services to a targeted audience of healthcare professionals and decision-makers.</p></div><span class="n">01</span></div>
+      <div class="sector rv d1"><div><span class="ic"><svg><use href="#i-cal"/></svg></span><h3>International conference &amp; workshops</h3><p>Learn from renowned international and local speakers on the latest trends and innovations in healthcare.</p></div><span class="n">02</span></div>
+      <div class="sector rv d2"><div><span class="ic"><svg><use href="#i-users"/></svg></span><h3>Networking opportunities</h3><p>Connect with industry leaders, potential partners, and clients.</p></div><span class="n">03</span></div>
+      <div class="sector rv d3"><div><span class="ic"><svg><use href="#i-chart"/></svg></span><h3>Business matching services</h3><p>Get matched with potential business partners and clients.</p></div><span class="n">04</span></div>
+      <div class="sector rv"><div><span class="ic"><svg><use href="#i-pin"/></svg></span><h3>Market access</h3><p>Access to Nigerian and West African markets.</p></div><span class="n">05</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark on-dark" id="why">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><span class="eyebrow">Why Nigeria Health Expo</span><h2 class="h2">Built for buyers. <span class="serif">Built for brands.</span></h2></div>
+    </div>
+    <div class="aud">
+      <div class="aud-card rv"><img src="/images/hero.jpg" alt="" loading="lazy" width="1920" height="1088">
+        <div class="aud-body"><span class="tag">Visitors</span><h3>Why attend</h3>
+          <ul class="aud-list">
+            <li><b>Learning opportunities.</b> Learn from international and local experts on the latest trends and innovations in healthcare.</li>
+            <li><b>Networking.</b> Connect with industry leaders, potential partners, and clients.</li>
+            <li><b>Product discovery.</b> Discover new products and technologies.</li>
+            <li><b>Career development.</b> Enhance your knowledge and skills.</li>
+            <li><b>Business opportunities.</b> Explore business opportunities and partnerships.</li>
+          </ul>
+          <a href="#register" data-tab="attend" class="btn btn-lime">Register now <svg><use href="#i-arrow"/></svg></a></div>
+      </div>
+      <div class="aud-card rv d1"><img src="/images/exhibit.jpg" alt="" loading="lazy" width="1200" height="912">
+        <div class="aud-body"><span class="tag">Exhibitors</span><h3>Why exhibit with us</h3>
+          <ul class="aud-list">
+            <li><b>Targeted audience.</b> Reach 10,000+ healthcare professionals, including doctors, nurses, hospital administrators, and procurement officers.</li>
+            <li><b>Brand visibility.</b> Increase brand awareness and visibility through our marketing channels.</li>
+            <li><b>Lead generation.</b> Generate high-quality leads and business opportunities.</li>
+            <li><b>Networking.</b> Connect with potential partners and clients, discover new markets and expand your business in Africa.</li>
+            <li><b>Product showcase.</b> Showcase your latest products and services.</li>
+          </ul>
+          <a href="#register" data-tab="exhibit" class="btn btn-line">Exhibit with us <svg><use href="#i-arrow"/></svg></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="programme">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><span class="eyebrow">Conference</span><h2 class="h2">Ideas that move <span class="serif">care forward.</span></h2></div>
+      <p class="lead">Join us for insightful sessions on the latest trends and innovations in healthcare.</p>
+    </div>
+    <p class="eyebrow rv" style="margin-bottom:20px">Conference tracks</p>
+    <div class="tracks rv">
+      <div class="track"><span class="n">01</span><h3>Healthcare innovation</h3></div>
+      <div class="track"><span class="n">02</span><h3>Medical technology</h3></div>
+      <div class="track"><span class="n">03</span><h3>Healthcare policy &amp; management</h3></div>
+      <div class="track"><span class="n">04</span><h3>Clinical research</h3></div>
+      <div class="track"><span class="n">05</span><h3>Digital health</h3></div>
+    </div>
+    <div class="fmt rv">
+      <div><h3>Keynote speakers</h3><p>Confirmed keynote speakers will be announced soon. Stay tuned!</p></div>
+      <div><h3>Panel discussions</h3><p>Join our panel discussions on the latest trends and innovations in healthcare.</p></div>
+      <div><h3>Workshops</h3><p>Hands-on workshops and training sessions will be available. Topics will be announced soon.</p></div>
+      <div><h3>Breakout sessions</h3><p>Explore breakout sessions on various topics, including medical specialties and healthcare management.</p></div>
+    </div>
+    <div class="notice rv"><svg><use href="#i-clock"/></svg><p><b>Conference schedule coming soon.</b> The schedule for Nigeria Health Expo 2027 is currently being finalized. Check back soon for updates on keynote speakers, panel discussions, workshops, and breakout sessions, or follow us on social media to stay informed.</p></div>
+  </div>
+</section>
+
+<section class="sec" id="speakers" style="padding-top:0">
+  <div class="wrap">
+    <div class="band rv on-dark">
+      <img src="/images/conference.jpg" alt="Speaker presenting on a conference stage" loading="lazy" width="1200" height="912">
+      <div class="band-b"><span class="eyebrow">Speakers</span><h2 class="h2">Learn from renowned <span class="serif">international</span> and local speakers.</h2><p class="lead">Confirmed keynote speakers will be announced soon. Stay tuned!</p><div style="margin-top:28px"><a href="#register" data-tab="attend" class="btn btn-lime">Register now <svg><use href="#i-arrow"/></svg></a></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="exhibit" style="background:var(--soft)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><span class="eyebrow">Exhibit &amp; sponsor</span><h2 class="h2">Choose your <span class="serif">presence.</span></h2></div>
+      <p class="lead">Showcase your products and services to a targeted audience of healthcare professionals and decision-makers.</p>
+    </div>
+    <div class="pk-grid two">
+      <div class="pk rv"><h3>Exhibitor registration</h3><p>Ready to exhibit? Register now and showcase your products and services to a targeted audience of healthcare professionals and decision-makers.</p><div style="margin-top:28px"><a href="#register" data-tab="exhibit" class="btn btn-dark">Exhibit with us <svg><use href="#i-arrow"/></svg></a></div></div>
+      <div class="pk feat rv d1"><h3>Sponsorship opportunities</h3><p>Partner with us and reach a wider audience. Explore our sponsorship packages and benefits.</p><div style="margin-top:28px"><a href="#register" data-tab="exhibit" class="btn btn-lime">Talk to us <svg><use href="#i-arrow"/></svg></a></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="sponsors">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><span class="eyebrow">Sponsors &amp; partners</span><h2 class="h2">Partner <span class="serif">with us.</span></h2></div>
+      <p class="lead">Join us as a sponsor or partner and be part of the largest healthcare event in Nigeria.</p>
+    </div>
+    <div class="tiers rv">
+      <div><small>Platinum sponsor</small><strong>To be announced</strong></div>
+      <div><small>Gold sponsor</small><strong>To be announced</strong></div>
+      <div><small>Silver sponsor</small><strong>To be announced</strong></div>
+      <div><small>Bronze sponsor</small><strong>To be announced</strong></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="news" style="background:var(--soft)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><span class="eyebrow">News &amp; events</span><h2 class="h2">Stay in <span class="serif">the loop.</span></h2></div>
+    </div>
+    <div class="two">
+      <div class="card rv"><h3>Latest news</h3><p>Stay updated with the latest news and updates on Nigeria Health Expo 2027.</p></div>
+      <div class="card rv d1"><h3>Upcoming events</h3><p>Mark your calendar for Nigeria Health Expo 2027, 26–28 April 2027, Oriental Hotel, Victoria Island, Lagos.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark on-dark" id="register">
+  <div class="wrap reg">
+    <div class="rv">
+      <span class="eyebrow">Registration</span>
+      <h2 class="h2" style="margin:16px 0 20px">Secure your place <span class="serif">today.</span></h2>
+      <p class="lead">Ready to register? Choose how you’d like to take part in Nigeria Health Expo 2027.</p>
+      <ul class="checks" style="color:#fff"><li>Exhibitors: register and showcase your products and services.</li><li>Visitors: register and attend Nigeria Health Expo 2027.</li></ul>
+    </div>
+    <div class="formbox rv d1">
+      <div class="tabs" role="tablist"><button type="button" role="tab" aria-selected="true" data-t="attend">I want to attend</button><button type="button" role="tab" aria-selected="false" data-t="exhibit">I want to exhibit</button></div>
+      <!-- TODO: connect a form service (e.g. Formspree) so submissions reach the organisers. -->
+      <div data-p="attend">
+        <form id="form-attend" novalidate>
+          <div class="fg">
+            <div class="field full"><label for="a-name">Full name</label><input id="a-name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="a-email">Work email</label><input id="a-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="a-phone">Phone</label><input id="a-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            <div class="field"><label for="a-org">Organisation</label><input id="a-org" name="organisation" autocomplete="organization"></div>
+            <div class="field"><label for="a-role">Your role</label><select id="a-role" name="role" required><option value="">Choose one</option><option>Healthcare professional</option><option>Hospital or clinic owner</option><option>Procurement</option><option>Supplier or manufacturer</option><option>Investor</option><option>Government or regulator</option><option>Student</option><option>Other</option></select></div>
+          </div>
+          <div class="form-foot"><button class="btn btn-green" type="submit">Register to attend <svg><use href="#i-arrow"/></svg></button><small>We only use your details to manage your registration.</small></div>
+        </form>
+        <div class="ok" role="status"><div class="ic">✓</div><h3>Thank you for registering</h3><p>Thank you for your interest in Nigeria Health Expo. A member of the team will be in touch with you shortly.</p></div>
+      </div>
+      <div data-p="exhibit" hidden>
+        <p class="fnote"><b>Exhibitor enquiry.</b> Contact the Nigeria Health Expo team by using the form below, and we will be in touch within 24 hours.</p>
+        <form id="form-exhibit" novalidate>
+          <div class="fg">
+            <div class="field"><label for="e-first">First name *</label><input id="e-first" name="first_name" autocomplete="given-name" required></div>
+            <div class="field"><label for="e-last">Last name *</label><input id="e-last" name="last_name" autocomplete="family-name" required></div>
+            <div class="field"><label for="e-job">Job title *</label><input id="e-job" name="job_title" autocomplete="organization-title" required></div>
+            <div class="field"><label for="e-co">Company *</label><input id="e-co" name="company" autocomplete="organization" required></div>
+            <div class="field"><label for="e-web">Company website</label><input id="e-web" name="website" type="url" autocomplete="url" placeholder="https://"></div>
+            <div class="field"><label for="e-phone">Mobile *</label><input id="e-phone" name="mobile" type="tel" autocomplete="tel" placeholder="+234" required></div>
+            <div class="field"><label for="e-email">Email *</label><input id="e-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="e-country">Country *</label><input id="e-country" name="country" autocomplete="country-name" required></div>
+            <div class="field"><label for="e-cat">Business category *</label><select id="e-cat" name="business_category" required><option value="">Choose one</option><option>Medical equipment &amp; devices</option><option>Laboratory technology</option><option>Hospital infrastructure</option><option>Pharmaceuticals &amp; healthcare products</option><option>Healthcare services &amp; solutions</option><option>Other</option></select></div>
+            <div class="field"><label for="e-hear">Where did you hear about us? *</label><select id="e-hear" name="heard_about_us" required><option value="">Choose one</option><option>Social media</option><option>Email</option><option>Search engine</option><option>Referral</option><option>Event or partner</option><option>Other</option></select></div>
+          </div>
+          <div class="form-foot"><button class="btn btn-green" type="submit">Submit enquiry <svg><use href="#i-arrow"/></svg></button><small>We will be in touch within 24 hours.</small></div>
+        </form>
+        <div class="ok" role="status"><div class="ic">✓</div><h3>Thank you for your enquiry</h3><p>Thank you for your interest in the Nigeria Health Expo. A member of the team will be in touch with you shortly.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="venue">
+  <div class="wrap">
+    <div class="venue rv on-dark"><img src="/images/lagos.jpg" alt="Lagos waterfront skyline at dusk" loading="lazy" width="1600" height="912">
+      <div class="venue-b">
+        <div><span class="eyebrow">Venue</span><h2 class="h2">See you in <span class="serif">Lagos.</span></h2><p class="lead">Join us at Oriental Hotel, Victoria Island, Lagos, and be part of the largest healthcare event in Nigeria.</p>
+          <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap"><a href="#register" data-tab="attend" class="btn btn-lime">Register now <svg><use href="#i-arrow"/></svg></a></div></div>
+        <div class="vinfo">
+          <div><small>Dates</small><strong>26–28 April 2027</strong></div>
+          <div><small>Venue</small><strong>Oriental Hotel, Victoria Island, Lagos</strong></div>
+          <div><small>Organised by</small><strong>Global Health Projects and Resources, in collaboration with the Healthcare Federation Nigeria</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><span class="eyebrow">Contact</span><h2 class="h2">Get in <span class="serif">touch.</span></h2></div>
+    </div>
+    <div class="two">
+      <div class="card rv"><small>Phone</small><h3><a href="tel:+23414536789">+234 1 453 6789</a></h3></div>
+      <div class="card rv d1"><small>Address</small><h3>21, Sylvia Crescent, Anthony Village, Lagos</h3></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq" style="padding-top:0">
+  <div class="wrap faq">
+    <div class="rv"><span class="eyebrow">FAQ</span><h2 class="h2" style="margin-top:16px">Good to <span class="serif">know.</span></h2><p class="lead" style="margin-top:16px">Everything you need to plan your visit.</p></div>
+    <div class="rv d1">
+      <details open><summary>When and where is Nigeria Health Expo 2027?</summary><p>26–28 April 2027 at Oriental Hotel, Victoria Island, Lagos.</p></details>
+      <details><summary>Who should attend?</summary><p>Healthcare professionals, medical practitioners and industry experts from Nigeria and around the world, including doctors, nurses, hospital administrators and procurement officers.</p></details>
+      <details><summary>How do I exhibit?</summary><p>Choose “I want to exhibit” in the registration form and submit your enquiry. The Nigeria Health Expo team will be in touch within 24 hours.</p></details>
+      <details><summary>How can I sponsor or partner?</summary><p>Partner with us and reach a wider audience. Use the exhibitor enquiry form to talk to the team about sponsorship packages and benefits.</p></details>
+      <details><summary>When will the conference schedule be available?</summary><p>The schedule is currently being finalized. Check back soon for updates on keynote speakers, panel discussions, workshops and breakout sessions, or follow us on social media.</p></details>
+      <details><summary>Who organises the expo?</summary><p>Nigeria Health Expo 2027 is organised by Global Health Projects and Resources in collaboration with the Healthcare Federation Nigeria.</p></details>
+    </div>
+  </div>
+</section>
+
+<section style="padding:0">
+  <div class="wrap"><div class="cta rv"><h2>Be part of the largest healthcare event in Nigeria.</h2><div class="row"><a href="#register" data-tab="attend" class="btn btn-lime">Register now <svg><use href="#i-arrow"/></svg></a><a href="#register" data-tab="exhibit" class="btn btn-line">Exhibit with us <svg><use href="#i-arrow"/></svg></a></div></div></div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-g">
+      <div><a href="#top" class="logo"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#C6F432" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span><span>Nigeria Health Expo<small>Exhibition · Conference</small></span></a>
+        <p style="margin-top:20px;max-width:360px">Connecting Global Innovation With Africa’s Healthcare Needs.</p>
+        <!-- Social links: add the real profile URLs, then remove the hidden attribute from this block. -->
+        <div class="social" hidden><p style="margin-top:20px;color:#fff;font-weight:600">Join our community</p><ul class="social-l"><li><a href="#" target="_blank" rel="noopener">Facebook</a></li><li><a href="#" target="_blank" rel="noopener">Twitter</a></li><li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="#" target="_blank" rel="noopener">Instagram</a></li></ul></div>
+      </div>
+      <div><h4>Event</h4><ul><li><a href="#about">About</a></li><li><a href="#sectors">Exhibition</a></li><li><a href="#programme">Conference</a></li><li><a href="#speakers">Speakers</a></li></ul></div>
+      <div><h4>Take part</h4><ul><li><a href="#register">Register</a></li><li><a href="#exhibit">Exhibit</a></li><li><a href="#sponsors">Sponsor</a></li><li><a href="#venue">Venue</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="tel:+23414536789">+234 1 453 6789</a></li><li>21, Sylvia Crescent, Anthony Village, Lagos</li></ul></div>
+    </div>
+    <div class="ftr-b"><span>© <span id="yr"></span> Nigeria Health Expo. All rights reserved.</span><span>Organised by Global Health Projects and Resources</span></div>
+  </div>
+</footer>
+
+<div class="mcta" id="mcta" aria-label="Quick actions">
+  <a href="#register" data-tab="attend" class="btn btn-lime">Register now</a>
+  <a href="#register" data-tab="exhibit" class="btn btn-dark">Exhibit with us</a>
+</div>
+
+
+<script>
+(function(){
+  var EVENT_DATE = '2027-04-26T00:00:00+01:00'; // start of 26 April 2027 (WAT); the countdown cell is currently hidden
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // countdown
+  var t = new Date(EVENT_DATE).getTime(), ids=['d','h','m','s'].map(function(k){return document.getElementById('cd-'+k)});
+  function pad(n){return String(n).padStart(2,'0')}
+  function tick(){var d=Math.max(0,t-Date.now());[Math.floor(d/864e5),Math.floor(d/36e5)%24,Math.floor(d/6e4)%60,Math.floor(d/1e3)%60].forEach(function(v,i){ids[i].textContent=pad(v)})}
+  tick(); setInterval(tick,1000);
+
+  // mobile menu
+  var bg=document.querySelector('.burger'), mn=document.getElementById('mnav');
+  function closeMenu(){mn.classList.remove('open');bg.setAttribute('aria-expanded','false');bg.setAttribute('aria-label','Open menu');document.body.style.overflow=''}
+  function positionMenu(){mn.style.setProperty('--menu-top',Math.max(0,document.querySelector('.hdr').getBoundingClientRect().bottom)+'px')}
+  bg.addEventListener('click',function(){positionMenu();var o=mn.classList.toggle('open');bg.setAttribute('aria-expanded',String(o));bg.setAttribute('aria-label',o?'Close menu':'Open menu');document.body.style.overflow=o?'hidden':''});
+  mn.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeMenu)});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&mn.classList.contains('open')){closeMenu();bg.focus()}});
+  window.addEventListener('resize',function(){if(window.innerWidth>=1080)closeMenu();else positionMenu()});
+
+  // sticky mobile cta bar
+  var mcta=document.getElementById('mcta');
+  function ctaTick(){var on=window.innerWidth<768&&window.scrollY>640;mcta.classList.toggle('armed',on);document.body.classList.toggle('mcta-on',on)}
+  window.addEventListener('scroll',ctaTick,{passive:true});window.addEventListener('resize',ctaTick);ctaTick();
+
+  // scrollspy nav highlighting
+  var spy=new IntersectionObserver(function(es){es.forEach(function(e){var l=document.querySelector('.nav a[href="#'+e.target.id+'"]');if(l)l.classList.toggle('active',e.isIntersecting)})},{rootMargin:'-40% 0px -55% 0px'});
+  document.querySelectorAll('main section[id]').forEach(function(s){spy.observe(s)});
+
+  // gentle parallax on large photos
+  var prls=[].slice.call(document.querySelectorAll('.hero-bg img,.venue>img,.band>img'));
+  prls.forEach(function(img){img.classList.add('prlx-t')});
+  var prm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function prlx(){
+    if(prm)return;
+    var vh=window.innerHeight;
+    prls.forEach(function(img){
+      var r=img.parentElement.getBoundingClientRect();
+      if(r.bottom<0||r.top>vh)return;
+      var p=(r.top+r.height/2-vh/2)/(vh/2+r.height/2);
+      img.style.transform='translateY('+(p*34).toFixed(1)+'px) scale(1.12)';
+    });
+  }
+  window.addEventListener('scroll',prlx,{passive:true});window.addEventListener('resize',prlx);prlx();
+
+  // reveal + counters
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;e.target.classList.add('in');e.target.querySelectorAll('[data-count]').forEach(count);io.unobserve(e.target)})},{threshold:.12});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+  function count(el){var n=+el.dataset.count,s=performance.now();function f(now){var p=Math.min(1,(now-s)/1600),v=Math.round(n*(1-Math.pow(1-p,3)));el.innerHTML=v.toLocaleString()+(el.hasAttribute('data-plus')?'<i>+</i>':'');if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+
+  // register tabs
+  var rt=document.querySelectorAll('.tabs button');
+  function setTab(k){rt.forEach(function(x){x.setAttribute('aria-selected',x.dataset.t===k)});document.querySelectorAll('[data-p]').forEach(function(p){p.hidden=p.dataset.p!==k})}
+  rt.forEach(function(b){b.addEventListener('click',function(){setTab(b.dataset.t)})});
+  document.querySelectorAll('[data-tab]').forEach(function(a){a.addEventListener('click',function(){setTab(a.dataset.tab)})});
+
+  // forms
+  ['form-attend','form-exhibit'].forEach(function(id){
+    var f=document.getElementById(id);
+    f.addEventListener('submit',function(e){
+      e.preventDefault(); var ok=true;
+      f.querySelectorAll('[required]').forEach(function(i){var bad=!i.value.trim()||(i.type==='email'&&!/^\S+@\S+\.\S+$/.test(i.value));i.parentNode.classList.toggle('err',bad);if(bad)ok=false});
+      if(!ok)return;
+      // TODO: send to your form service here (e.g. fetch('https://formspree.io/f/YOUR_ID',{method:'POST',body:new FormData(f)}))
+      f.style.display='none'; var okEl=f.nextElementSibling; okEl.classList.add('show');
+      var h=okEl.querySelector('h3'); h.setAttribute('tabindex','-1'); h.focus();
+    });
+  });
+})();
+</script>
+</body>
+</html>

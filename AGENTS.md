@@ -1,0 +1,2 @@
+- Keep the expo experience in `public/expo.html`, embedded by the index route, to preserve the standalone hosting format.
+- Define expo visual roles with CSS custom properties and keep device-specific refinements together to maintain consistent presentation.
