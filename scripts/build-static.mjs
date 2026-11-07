@@ -14,6 +14,7 @@ mkdirSync(OUT, { recursive: true });
 cpSync("public/images", `${OUT}/images`, { recursive: true });
 cpSync("public/favicon.ico", `${OUT}/favicon.ico`);
 cpSync("public/robots.txt", `${OUT}/robots.txt`);
+cpSync("public/send.php", `${OUT}/send.php`); // form handler (needs PHP on the host)
 
 // expo.html becomes the home page. Image paths are made relative so the site also
 // works on the temporary address (http://SERVER-IP/~username/), not only at the domain root.

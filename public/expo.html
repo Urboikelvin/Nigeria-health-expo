@@ -518,9 +518,14 @@ summary{font-size:17px;line-height:1.5}
 .pb b{font-size:clamp(24px,2.8vw,38px);font-weight:800;color:#fff;letter-spacing:-.01em}
 .pb em{font-style:normal;font-size:12px;font-weight:500;letter-spacing:.03em;color:rgba(255,255,255,.75);line-height:1.5;margin-top:5px}
 .pb abbr{text-decoration:none;cursor:help}
-.hero-partners{display:none}
 @media(min-width:1080px) and (max-width:1279px){.brand-partners .p-ghpr{display:none}}
-@media(max-width:699px){.brand-partners{display:none}.logo-img{height:40px}.logo-plate .logo-img{height:50px}.pb em{display:none}.hero-partners{display:flex;align-items:center;gap:16px;background:#fff;border-radius:10px;padding:10px 16px;width:fit-content;margin:22px 0 4px}.hero-partners img{display:block;width:auto;height:42px}.hero-partners img+img{height:33px;padding-left:16px;border-left:1px solid var(--line);box-sizing:content-box}}
+.hp{position:absolute!important;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none}
+.form-err{color:#B42318;font-size:14px;line-height:1.5;margin-top:14px;font-weight:600}
+.btn[disabled]{opacity:.65;cursor:wait}
+@media(max-width:899px){.brand{gap:12px}.logo-img{height:40px}.brand-partners{gap:12px;padding-left:12px}.brand-partners .p-hfn{height:46px}.brand-partners .p-ghpr{height:34px;padding-left:12px}}
+@media(max-width:699px){.brand{gap:9px}.logo-img{height:32px}.brand-partners{gap:9px;padding-left:9px}.brand-partners .p-hfn{height:38px}.brand-partners .p-ghpr{height:27px;padding-left:9px}.logo-plate .logo-img{height:50px}.pb em{display:none}}
+@media(max-width:359px){.brand-partners .p-ghpr{display:none}}
+@media(min-width:380px) and (max-width:699px){.logo-img{height:36px}.brand-partners .p-hfn{height:43px}.brand-partners .p-ghpr{height:30px}}
 </style>
 <link rel="icon" href="/favicon.ico">
 </head>
@@ -578,7 +583,6 @@ summary{font-size:17px;line-height:1.5}
   <div class="wrap">
     <span class="hero-tag rv"><b>EXHIBITION &amp; CONFERENCE</b> Connecting Global Innovation With Africa’s Healthcare Needs</span>
     <h1 class="rv d1">Nigeria<br>Health Expo<br><span class="yr"><span class="serif">2027.</span><span class="pb"><small>Powered by</small><b><abbr title="Healthcare Federation of Nigeria">HFN</abbr> &amp; <abbr title="Global Health Projects and Resources">GHPR</abbr></b><em>Healthcare Federation of Nigeria<br>Global Health Projects and Resources</em></span></span></h1>
-    <div class="hero-partners rv d2" aria-label="Powered by HFN and GHPR"><img src="/images/hfn-logo.png" alt="Healthcare Federation of Nigeria (HFN)" width="53" height="44"><img src="/images/ghpr-logo.png" alt="Global Health Project &amp; Resources (GHPR)" width="96" height="35"></div>
     <p class="lead rv d2">A 3-day event bringing together healthcare professionals, medical practitioners and industry experts to showcase innovations, share knowledge and explore business opportunities.</p>
     <div class="hero-ctas rv d3">
       <a href="#register" data-tab="attend" class="btn btn-lime">Register Now <svg><use href="#i-arrow"/></svg></a>
@@ -769,8 +773,8 @@ summary{font-size:17px;line-height:1.5}
     <div class="rv">
       <span class="eyebrow">Registration</span>
       <h2 class="h2" style="margin:16px 0 20px">Secure your place <span class="serif">today.</span></h2>
-      <p class="lead">Ready to register? Choose how you’d like to take part in Nigeria Health Expo 2027.</p>
-      <ul class="checks" style="color:#fff"><li>Exhibitors: register and showcase your products and services.</li><li>Visitors: register and attend Nigeria Health Expo 2027.</li></ul>
+      <p class="lead">Ready to register? Choose how you’d like to take part in Nigeria Health Expo 2027. Visitor registration is free.</p>
+      <ul class="checks" style="color:#fff"><li>Exhibitors: register and showcase your products and services.</li><li>Visitors: register for free and attend Nigeria Health Expo 2027.</li></ul>
     </div>
     <div class="formbox rv d1">
       <div class="tabs" role="tablist"><button type="button" role="tab" aria-selected="true" data-t="attend">I want to attend</button><button type="button" role="tab" aria-selected="false" data-t="exhibit">I want to exhibit</button></div>
@@ -784,9 +788,9 @@ summary{font-size:17px;line-height:1.5}
             <div class="field"><label for="a-org">Organisation</label><input id="a-org" name="organisation" autocomplete="organization"></div>
             <div class="field"><label for="a-role">Your role</label><select id="a-role" name="role" required><option value="">Choose one</option><option>Healthcare professional</option><option>Hospital or clinic owner</option><option>Procurement</option><option>Supplier or manufacturer</option><option>Investor</option><option>Government or regulator</option><option>Student</option><option>Other</option></select></div>
           </div>
-          <div class="form-foot"><button class="btn btn-green" type="submit">Register to attend <svg><use href="#i-arrow"/></svg></button><small>We only use your details to manage your registration.</small></div>
+          <div class="form-foot"><button class="btn btn-green" type="submit">Register to attend <svg><use href="#i-arrow"/></svg></button><small>Visitor registration is free. We only use your details to manage your registration.</small></div>
         </form>
-        <div class="ok" role="status"><div class="ic">✓</div><h3>Thank you for registering</h3><p>Thank you for your interest in Nigeria Health Expo. A member of the team will be in touch with you shortly.</p></div>
+        <div class="ok" role="status"><div class="ic">✓</div><h3>Thank you for registering</h3><p>Thank you for your interest in Nigeria Health Expo. A member of the team will be in touch with you shortly. A confirmation email is on its way (please check your spam folder too).</p></div>
       </div>
       <div data-p="exhibit" hidden>
         <p class="fnote"><b>Exhibitor enquiry.</b> Contact the Nigeria Health Expo team by using the form below, and we will be in touch within 24 hours.</p>
@@ -805,7 +809,7 @@ summary{font-size:17px;line-height:1.5}
           </div>
           <div class="form-foot"><button class="btn btn-green" type="submit">Submit enquiry <svg><use href="#i-arrow"/></svg></button><small>We will be in touch within 24 hours.</small></div>
         </form>
-        <div class="ok" role="status"><div class="ic">✓</div><h3>Thank you for your enquiry</h3><p>Thank you for your interest in the Nigeria Health Expo. A member of the team will be in touch with you shortly.</p></div>
+        <div class="ok" role="status"><div class="ic">✓</div><h3>Thank you for your enquiry</h3><p>Thank you for your interest in the Nigeria Health Expo. A member of the team will be in touch with you shortly. A confirmation email is on its way (please check your spam folder too).</p></div>
       </div>
     </div>
   </div>
@@ -844,6 +848,7 @@ summary{font-size:17px;line-height:1.5}
     <div class="rv"><span class="eyebrow">FAQ</span><h2 class="h2" style="margin-top:16px">Good to <span class="serif">know.</span></h2><p class="lead" style="margin-top:16px">Everything you need to plan your visit.</p></div>
     <div class="rv d1">
       <details open><summary>When and where is Nigeria Health Expo 2027?</summary><p>26–28 April 2027 at Oriental Hotel, Victoria Island, Lagos.</p></details>
+      <details><summary>Is visitor registration free?</summary><p>Yes. Visitor registration for Nigeria Health Expo 2027 is free.</p></details>
       <details><summary>Who should attend?</summary><p>Healthcare professionals, medical practitioners and industry experts from Nigeria and around the world, including doctors, nurses, hospital administrators and procurement officers.</p></details>
       <details><summary>How do I exhibit?</summary><p>Choose “I want to exhibit” in the registration form and submit your enquiry. The Nigeria Health Expo team will be in touch within 24 hours.</p></details>
       <details><summary>How can I sponsor or partner?</summary><p>Partner with us and reach a wider audience. Use the exhibitor enquiry form to talk to the team about sponsorship packages and benefits.</p></details>
@@ -941,13 +946,26 @@ summary{font-size:17px;line-height:1.5}
   // forms
   ['form-attend','form-exhibit'].forEach(function(id){
     var f=document.getElementById(id);
+    var hp=document.createElement('input');hp.type='text';hp.name='hp';hp.tabIndex=-1;hp.autocomplete='off';hp.setAttribute('aria-hidden','true');hp.className='hp';f.appendChild(hp);
     f.addEventListener('submit',function(e){
       e.preventDefault(); var ok=true;
       f.querySelectorAll('[required]').forEach(function(i){var bad=!i.value.trim()||(i.type==='email'&&!/^\S+@\S+\.\S+$/.test(i.value));i.parentNode.classList.toggle('err',bad);if(bad)ok=false});
       if(!ok)return;
-      // TODO: send to your form service here (e.g. fetch('https://formspree.io/f/YOUR_ID',{method:'POST',body:new FormData(f)}))
-      f.style.display='none'; var okEl=f.nextElementSibling; okEl.classList.add('show');
-      var h=okEl.querySelector('h3'); h.setAttribute('tabindex','-1'); h.focus();
+      var btn=f.querySelector('button[type=submit]'), msg=f.querySelector('.form-err');
+      if(!msg){msg=document.createElement('p');msg.className='form-err';msg.setAttribute('role','alert');f.appendChild(msg)}
+      msg.textContent=''; var label=btn.innerHTML; btn.disabled=true; btn.textContent='Sending…';
+      var fd=new FormData(f); fd.append('form',id==='form-attend'?'attend':'exhibit');
+      fetch('send.php',{method:'POST',body:fd})
+        .then(function(r){return r.json().catch(function(){return null})})
+        .then(function(d){
+          if(!d||!d.ok){throw {server:(d&&d.error)||''}}
+          f.style.display='none'; var okEl=f.nextElementSibling; okEl.classList.add('show');
+          var h=okEl.querySelector('h3'); h.setAttribute('tabindex','-1'); h.focus();
+        })
+        .catch(function(err){
+          msg.textContent=(err&&err.server)?err.server+' You can also email nigeriahealthexpo@gmail.com.':'We couldn’t send your details just now. Please try again, or email nigeriahealthexpo@gmail.com.';
+          btn.disabled=false; btn.innerHTML=label;
+        });
     });
   });
 })();

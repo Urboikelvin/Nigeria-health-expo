@@ -24,7 +24,7 @@ bun run test       # run tests
 
 ## Before launch
 
-- Connect the registration and enquiry forms in `public/expo.html` to a form service (search for `TODO`).
+- Forms are handled by `public/send.php` (needs PHP, e.g. cPanel hosting). Check the addresses at the top of that file, make sure the `contractform@` mailbox exists, and test a submission on the live server.
 - Add the social media URLs in the footer and remove the `hidden` attribute from the `.social` block.
 - Replace the placeholder photos in `public/images/` with real event photography.
 - Set the Nitro deployment preset for your host (see `vite.config.ts`).
