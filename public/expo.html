@@ -496,17 +496,31 @@ summary{font-size:17px;line-height:1.5}
 @media(max-width:767px){.sectors.five .sector h3{font-size:14px}.sectors.five>.sector{padding-inline:12px}.aud-card{min-height:0}.vm p{font-size:13px}.aud-list li{font-size:13px}.track{min-height:120px;padding:18px}.track h3{font-size:15px}.fmt{margin-top:40px}.notice{padding:18px;margin-top:36px}.notice p{font-size:13px}.card{padding:24px}.card h3{font-size:18px}.tiers>div{padding:26px 12px}.sectors.five>.sector{min-height:200px}.pk-grid.two .pk{padding-bottom:26px}}
 
 /* logo + hero "Powered by" */
-.logo-img{height:50px;width:auto;display:block}
-.logo-plate{display:inline-block;background:#fff;padding:10px 16px;border-radius:6px}
-.logo-plate .logo-img{height:62px}
 .yr{display:flex;align-items:center;gap:clamp(16px,2.2vw,28px);flex-wrap:wrap}
-.pb{display:flex;flex-direction:column;gap:2px;border-left:2px solid rgba(255,255,255,.35);padding-left:clamp(16px,2.2vw,28px);font-style:normal;line-height:1.1}
-.pb small{font-size:clamp(13px,1.3vw,18px);font-weight:500;color:rgba(255,255,255,.82);letter-spacing:0}
-.pb b{font-size:clamp(22px,2.6vw,36px);font-weight:700;color:#fff;letter-spacing:-.01em}
-.pb b::after{content:"";display:block;width:64px;height:3px;border-radius:3px;background:#F5A524;margin-top:8px}
-.pb abbr{text-decoration:none;cursor:help}
 @media(max-width:767px){.logo-img{height:40px}.logo-plate .logo-img{height:50px}}
 
+
+/* co-branded header, partner logos, hero "Powered by" card */
+.brand{display:flex;align-items:center;gap:18px;min-width:0}
+.logo-img{height:50px;width:auto;display:block}
+.brand-partners{display:flex;align-items:center;gap:18px;padding-left:18px;border-left:1px solid var(--line)}
+.brand-partners img{display:block;width:auto}
+.brand-partners .p-hfn{height:56px}
+.brand-partners .p-ghpr{height:42px;padding-left:18px;border-left:1px solid var(--line);box-sizing:content-box}
+.logo-plate{display:inline-block;background:#fff;padding:10px 16px;border-radius:6px}
+.logo-plate .logo-img{height:62px}
+.logo-plate.partners{display:flex;align-items:center;gap:16px;padding:10px 16px;margin-top:10px;width:fit-content}
+.logo-plate.partners img{height:40px;width:auto;display:block}
+.logo-plate.partners img+img{height:32px;padding-left:16px;border-left:1px solid var(--line);box-sizing:content-box}
+.yr{display:flex;align-items:center;gap:clamp(18px,2.4vw,32px);flex-wrap:wrap;margin-top:18px}
+.pb{display:flex;flex-direction:column;gap:3px;background:linear-gradient(135deg,rgba(255,255,255,.15),rgba(255,255,255,.05));border:1px solid rgba(255,255,255,.2);border-left:3px solid #F5A524;border-radius:10px;padding:14px 24px 14px 20px;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 12px 32px rgba(0,0,0,.28);font-style:normal;line-height:1.15;letter-spacing:0}
+.pb small{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:#F5A524}
+.pb b{font-size:clamp(24px,2.8vw,38px);font-weight:800;color:#fff;letter-spacing:-.01em}
+.pb em{font-style:normal;font-size:12px;font-weight:500;letter-spacing:.03em;color:rgba(255,255,255,.75);line-height:1.5;margin-top:5px}
+.pb abbr{text-decoration:none;cursor:help}
+.hero-partners{display:none}
+@media(min-width:1080px) and (max-width:1279px){.brand-partners .p-ghpr{display:none}}
+@media(max-width:699px){.brand-partners{display:none}.logo-img{height:40px}.logo-plate .logo-img{height:50px}.pb em{display:none}.hero-partners{display:flex;align-items:center;gap:16px;background:#fff;border-radius:10px;padding:10px 16px;width:fit-content;margin:22px 0 4px}.hero-partners img{display:block;width:auto;height:42px}.hero-partners img+img{height:33px;padding-left:16px;border-left:1px solid var(--line);box-sizing:content-box}}
 </style>
 <link rel="icon" href="/favicon.ico">
 </head>
@@ -536,7 +550,13 @@ summary{font-size:17px;line-height:1.5}
 
 <header class="hdr">
   <div class="wrap">
-    <a href="#top" class="logo" aria-label="Nigeria Health Expo home"><img class="logo-img" src="/images/logo-header.png" alt="Nigeria Health Expo" width="152" height="50"></a>
+    <div class="brand">
+      <a href="#top" class="logo" aria-label="Nigeria Health Expo home"><img class="logo-img" src="/images/logo-header.png" alt="Nigeria Health Expo" width="142" height="46"></a>
+      <span class="brand-partners">
+        <img class="p-hfn" src="/images/hfn-logo.png" alt="Healthcare Federation of Nigeria (HFN)" width="56" height="46">
+        <img class="p-ghpr" src="/images/ghpr-logo.png" alt="Global Health Project &amp; Resources (GHPR)" width="98" height="36">
+      </span>
+    </div>
     <nav class="nav" aria-label="Main">
       <a href="#about">About</a><a href="#sectors">Exhibition</a><a href="#programme">Conference</a><a href="#sponsors">Sponsors</a><a href="#venue">Venue</a><a href="#contact">Contact</a>
     </nav>
@@ -557,7 +577,8 @@ summary{font-size:17px;line-height:1.5}
   <div class="hero-bg"><img src="/images/hero.jpg" alt="" width="1920" height="1088" fetchpriority="high"></div>
   <div class="wrap">
     <span class="hero-tag rv"><b>EXHIBITION &amp; CONFERENCE</b> Connecting Global Innovation With Africa’s Healthcare Needs</span>
-    <h1 class="rv d1">Nigeria<br>Health Expo<br><span class="yr"><span class="serif">2027.</span><span class="pb"><small>Powered by</small><b><abbr title="Healthcare Federation of Nigeria">HFN</abbr> &amp; <abbr title="Global Health Projects and Resources">GHPR</abbr></b></span></span></h1>
+    <h1 class="rv d1">Nigeria<br>Health Expo<br><span class="yr"><span class="serif">2027.</span><span class="pb"><small>Powered by</small><b><abbr title="Healthcare Federation of Nigeria">HFN</abbr> &amp; <abbr title="Global Health Projects and Resources">GHPR</abbr></b><em>Healthcare Federation of Nigeria<br>Global Health Projects and Resources</em></span></span></h1>
+    <div class="hero-partners rv d2" aria-label="Powered by HFN and GHPR"><img src="/images/hfn-logo.png" alt="Healthcare Federation of Nigeria (HFN)" width="53" height="44"><img src="/images/ghpr-logo.png" alt="Global Health Project &amp; Resources (GHPR)" width="96" height="35"></div>
     <p class="lead rv d2">A 3-day event bringing together healthcare professionals, medical practitioners and industry experts to showcase innovations, share knowledge and explore business opportunities.</p>
     <div class="hero-ctas rv d3">
       <a href="#register" data-tab="attend" class="btn btn-lime">Register Now <svg><use href="#i-arrow"/></svg></a>
@@ -842,6 +863,8 @@ summary{font-size:17px;line-height:1.5}
     <div class="ftr-g">
       <div><a href="#top" class="logo logo-plate" aria-label="Nigeria Health Expo home"><img class="logo-img" src="/images/logo.png" alt="Nigeria Health Expo — Global Health. Local Impact." width="220" height="81"></a>
         <p style="margin-top:20px;max-width:360px">Connecting Global Innovation With Africa’s Healthcare Needs.</p>
+        <p style="margin-top:22px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:#F5A524">Powered by</p>
+        <div class="logo-plate partners"><img src="/images/hfn-logo.png" alt="Healthcare Federation of Nigeria (HFN)" width="52" height="43"><img src="/images/ghpr-logo.png" alt="Global Health Project &amp; Resources (GHPR)" width="92" height="34"></div>
         <!-- Social links: add the real profile URLs, then remove the hidden attribute from this block. -->
         <div class="social" hidden><p style="margin-top:20px;color:#fff;font-weight:600">Join our community</p><ul class="social-l"><li><a href="#" target="_blank" rel="noopener">Facebook</a></li><li><a href="#" target="_blank" rel="noopener">Twitter</a></li><li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="#" target="_blank" rel="noopener">Instagram</a></li></ul></div>
       </div>
@@ -849,7 +872,7 @@ summary{font-size:17px;line-height:1.5}
       <div><h4>Take part</h4><ul><li><a href="#register">Register</a></li><li><a href="#exhibit">Exhibit</a></li><li><a href="#sponsors">Sponsor</a></li><li><a href="#venue">Venue</a></li></ul></div>
       <div><h4>Contact</h4><ul><li><a href="tel:+23414536789">+234 1 453 6789</a></li><li>21, Sylvia Crescent, Anthony Village, Lagos</li></ul></div>
     </div>
-    <div class="ftr-b"><span>© <span id="yr"></span> Nigeria Health Expo. All rights reserved.</span><span>Organised by Global Health Projects and Resources</span></div>
+    <div class="ftr-b"><span>© <span id="yr"></span> Nigeria Health Expo. All rights reserved.</span><span>Powered by HFN &amp; GHPR</span></div>
   </div>
 </footer>
 
