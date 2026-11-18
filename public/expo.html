@@ -8,14 +8,14 @@
 <meta property="og:title" content="Nigeria Health Expo 2027">
 <meta property="og:description" content="Connecting Global Innovation With Africa’s Healthcare Needs. 26–28 April 2027, Oriental Hotel, Victoria Island, Lagos.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#061A16">
+<meta name="theme-color" content="#0A2A45">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
 :root{
-  --navy:oklch(0.20 0.027 180);--navy-2:oklch(0.27 0.033 180);--green:oklch(0.51 0.13 160);--green-d:oklch(0.44 0.11 160);--lime:oklch(0.93 0.19 120);
-  --ink:oklch(0.23 0.02 180);--ink-2:oklch(0.47 0.02 180);--line:oklch(0.9 0.008 180);--soft:oklch(0.97 0.006 180);--white:oklch(1 0 0);
+  --navy:#0A2A45;--navy-2:#113A5E;--green:#03894F;--green-d:#02703F;--lime:#FCB40C;
+  --ink:#0D2233;--ink-2:#4A5F70;--line:#DDE7EE;--soft:#F1F7FA;--white:#fff;
   --hero-shade:linear-gradient(90deg, color-mix(in oklab,var(--navy) 94%,transparent),color-mix(in oklab,var(--navy) 70%,transparent) 43%,color-mix(in oklab,var(--navy) 12%,transparent)),linear-gradient(0deg,var(--navy),transparent 55%);
   --surface-glass:color-mix(in oklab,var(--white) 8%,transparent);--line-dark:color-mix(in oklab,var(--white) 18%,transparent);
   --wrap:1440px;--r:8px;
@@ -240,7 +240,7 @@ img{display:block;max-width:100%;height:auto}
 .field label{display:block;font-size:.8rem;font-weight:700;margin-bottom:8px}
 .field input,.field select,.field textarea{width:100%;height:52px;border:1.5px solid var(--line);border-radius:12px;padding:0 16px;font-family:inherit;font-size:16px;background:#fff;color:var(--ink);transition:.2s}
 .field textarea{height:110px;padding:14px 16px;resize:vertical}
-.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--green);box-shadow:0 0 0 4px rgba(0,168,107,.14)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--green);box-shadow:0 0 0 4px rgba(3,137,79,.14)}
 .field.err input,.field.err select{border-color:#DC2626}
 .form-foot{margin-top:24px;display:grid;gap:12px}
 .form-foot .btn{justify-content:center;width:100%}
@@ -513,8 +513,8 @@ summary{font-size:17px;line-height:1.5}
 .logo-plate.partners img{height:40px;width:auto;display:block}
 .logo-plate.partners img+img{height:32px;padding-left:16px;border-left:1px solid var(--line);box-sizing:content-box}
 .yr{display:flex;align-items:center;gap:clamp(18px,2.4vw,32px);flex-wrap:wrap;margin-top:18px}
-.pb{display:flex;flex-direction:column;gap:3px;background:linear-gradient(135deg,rgba(255,255,255,.15),rgba(255,255,255,.05));border:1px solid rgba(255,255,255,.2);border-left:3px solid #F5A524;border-radius:10px;padding:14px 24px 14px 20px;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 12px 32px rgba(0,0,0,.28);font-style:normal;line-height:1.15;letter-spacing:0}
-.pb small{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:#F5A524}
+.pb{display:flex;flex-direction:column;gap:3px;background:linear-gradient(135deg,rgba(255,255,255,.15),rgba(255,255,255,.05));border:1px solid rgba(255,255,255,.2);border-left:3px solid var(--lime);border-radius:10px;padding:14px 24px 14px 20px;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 12px 32px rgba(0,0,0,.28);font-style:normal;line-height:1.15;letter-spacing:0}
+.pb small{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--lime)}
 .pb b{font-size:clamp(24px,2.8vw,38px);font-weight:800;color:#fff;letter-spacing:-.01em}
 .pb em{font-style:normal;font-size:12px;font-weight:500;letter-spacing:.03em;color:rgba(255,255,255,.75);line-height:1.5;margin-top:5px}
 .pb abbr{text-decoration:none;cursor:help}
@@ -526,6 +526,25 @@ summary{font-size:17px;line-height:1.5}
 @media(max-width:699px){.brand{gap:9px}.logo-img{height:32px}.brand-partners{gap:9px;padding-left:9px}.brand-partners .p-hfn{height:38px}.brand-partners .p-ghpr{height:27px;padding-left:9px}.logo-plate .logo-img{height:50px}.pb em{display:none}}
 @media(max-width:359px){.brand-partners .p-ghpr{display:none}}
 @media(min-width:380px) and (max-width:699px){.logo-img{height:36px}.brand-partners .p-hfn{height:43px}.brand-partners .p-ghpr{height:30px}}
+@media(min-width:900px){#contact .two{grid-template-columns:repeat(3,minmax(0,1fr))}}
+#contact .card h3.em{font-size:18px;overflow-wrap:anywhere}
+@media(max-width:767px){#contact .card h3.em{font-size:15px}}
+/* calmer layout */
+.hero-bg{inset:-14px}
+.hero-bg img{filter:blur(3px) saturate(.7) brightness(.82)}
+.hero-tag{display:flex;align-items:center;gap:12px;font-size:12px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.92)}
+.hero-tag::before{content:"";width:28px;height:2px;background:var(--lime);flex:none}
+.hero-meta{grid-template-columns:1fr 1.7fr;max-width:760px}
+.hero-meta>div:nth-child(2){border-right:0}
+.pb{padding:10px 18px 10px 16px;box-shadow:none;gap:2px}
+.pb em{display:none}
+.pb b{font-size:clamp(20px,2.2vw,30px)}
+.aud-card img{display:none}
+.aud-card{background:linear-gradient(160deg,#113A5E,#0A2A45);min-height:0;align-items:stretch;border-top:3px solid var(--lime)}
+.aud-card.ex{border-top-color:var(--lime)}
+.aud-card::before{display:none}
+.aud-body{padding:clamp(28px,4vw,48px)}
+@media(max-width:767px){.hero-meta{max-width:none}.hero-meta>div:nth-child(2){padding-left:14px}}
 </style>
 <link rel="icon" href="/favicon.ico">
 </head>
@@ -548,11 +567,6 @@ summary{font-size:17px;line-height:1.5}
   <symbol id="i-person" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4.5"/><path d="M3 22c0-5 4-8.5 9-8.5s9 3.5 9 8.5z"/></symbol>
 </svg>
 
-<div class="topbar"><div class="wrap">
-  <span><b>26–28 April 2027</b> · Oriental Hotel, Victoria Island, Lagos</span>
-  <div class="tb-r"><a href="#faq">FAQ</a><a href="#venue">Venue</a><a href="#register">Register</a></div>
-</div></div>
-
 <header class="hdr">
   <div class="wrap">
     <div class="brand">
@@ -563,17 +577,16 @@ summary{font-size:17px;line-height:1.5}
       </span>
     </div>
     <nav class="nav" aria-label="Main">
-      <a href="#about">About</a><a href="#sectors">Exhibition</a><a href="#programme">Conference</a><a href="#sponsors">Sponsors</a><a href="#venue">Venue</a><a href="#contact">Contact</a>
+      <a href="#about">About</a><a href="#sectors">Exhibition</a><a href="#programme">Conference</a><a href="#exhibit">Exhibit</a><a href="#venue">Venue</a><a href="#contact">Contact</a>
     </nav>
     <div class="hdr-cta">
-      <a href="#register" data-tab="exhibit" class="btn btn-sm btn-line2">Book a stand</a>
       <a href="#register" data-tab="attend" class="btn btn-sm btn-dark">Register now</a>
       <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mnav"><span></span></button>
     </div>
   </div>
 </header>
 <nav class="mnav" id="mnav" aria-label="Mobile">
-  <a href="#about">About</a><a href="#sectors">Exhibition</a><a href="#programme">Conference</a><a href="#sponsors">Sponsors</a><a href="#venue">Venue</a><a href="#contact">Contact</a><a href="#faq">FAQ</a>
+  <a href="#about">About</a><a href="#sectors">Exhibition</a><a href="#programme">Conference</a><a href="#exhibit">Exhibit</a><a href="#venue">Venue</a><a href="#contact">Contact</a><a href="#faq">FAQ</a>
   <a href="#register" data-tab="attend" class="btn btn-green">Register now</a>
 </nav>
 
@@ -581,9 +594,9 @@ summary{font-size:17px;line-height:1.5}
 <section class="hero">
   <div class="hero-bg"><img src="/images/hero.jpg" alt="" width="1920" height="1088" fetchpriority="high"></div>
   <div class="wrap">
-    <span class="hero-tag rv"><b>EXHIBITION &amp; CONFERENCE</b> Connecting Global Innovation With Africa’s Healthcare Needs</span>
+    <span class="hero-tag rv">Connecting Global Innovation With Africa’s Healthcare Needs</span>
     <h1 class="rv d1">Nigeria<br>Health Expo<br><span class="yr"><span class="serif">2027.</span><span class="pb"><small>Powered by</small><b><abbr title="Healthcare Federation of Nigeria">HFN</abbr> &amp; <abbr title="Global Health Projects and Resources">GHPR</abbr></b><em>Healthcare Federation of Nigeria<br>Global Health Projects and Resources</em></span></span></h1>
-    <p class="lead rv d2">A 3-day event bringing together healthcare professionals, medical practitioners and industry experts to showcase innovations, share knowledge and explore business opportunities.</p>
+    <p class="lead rv d2">A 3-day exhibition and conference for healthcare professionals, medical practitioners and industry experts.</p>
     <div class="hero-ctas rv d3">
       <a href="#register" data-tab="attend" class="btn btn-lime">Register Now <svg><use href="#i-arrow"/></svg></a>
       <a href="#register" data-tab="exhibit" class="btn btn-line">Exhibit with Us <svg><use href="#i-arrow"/></svg></a>
@@ -591,18 +604,12 @@ summary{font-size:17px;line-height:1.5}
     <div class="hero-meta">
       <div><svg><use href="#i-cal"/></svg><div><small>Dates</small><strong>26–28 April 2027</strong></div></div>
       <div><svg><use href="#i-pin"/></svg><div><small>Venue</small><strong>Oriental Hotel, Victoria Island, Lagos</strong></div></div>
-      <div><svg><use href="#i-clock"/></svg><div><small>The experience</small><strong>Exhibition &amp; conference</strong></div></div>
       <div class="countdown-cell" hidden><div class="cd" id="countdown" aria-label="Countdown to opening">
         <div><b id="cd-d">00</b><span>Days</span></div><div><b id="cd-h">00</b><span>Hrs</span></div><div><b id="cd-m">00</b><span>Min</span></div><div><b id="cd-s">00</b><span>Sec</span></div>
       </div></div>
     </div>
   </div>
 </section>
-
-<div class="ticker" aria-hidden="true"><div class="ticker-t">
-  <span>Medical equipment &amp; devices</span><span>Laboratory technology</span><span>Hospital infrastructure</span><span>Pharmaceuticals &amp; healthcare products</span><span>Digital health</span><span>Health IT</span><span>Telemedicine</span><span>Health financing</span>
-  <span>Medical equipment &amp; devices</span><span>Laboratory technology</span><span>Hospital infrastructure</span><span>Pharmaceuticals &amp; healthcare products</span><span>Digital health</span><span>Health IT</span><span>Telemedicine</span><span>Health financing</span>
-</div></div>
 
 <section class="sec" id="about">
   <div class="wrap">
@@ -669,7 +676,7 @@ summary{font-size:17px;line-height:1.5}
       <div><span class="eyebrow">Why Nigeria Health Expo</span><h2 class="h2">Built for buyers. <span class="serif">Built for brands.</span></h2></div>
     </div>
     <div class="aud">
-      <div class="aud-card rv"><img src="/images/hero.jpg" alt="" loading="lazy" width="1920" height="1088">
+      <div class="aud-card rv">
         <div class="aud-body"><span class="tag">Visitors</span><h3>Why attend</h3>
           <ul class="aud-list">
             <li><b>Learning opportunities.</b> Learn from international and local experts on the latest trends and innovations in healthcare.</li>
@@ -680,7 +687,7 @@ summary{font-size:17px;line-height:1.5}
           </ul>
           <a href="#register" data-tab="attend" class="btn btn-lime">Register now <svg><use href="#i-arrow"/></svg></a></div>
       </div>
-      <div class="aud-card rv d1"><img src="/images/exhibit.jpg" alt="" loading="lazy" width="1200" height="912">
+      <div class="aud-card ex rv d1">
         <div class="aud-body"><span class="tag">Exhibitors</span><h3>Why exhibit with us</h3>
           <ul class="aud-list">
             <li><b>Targeted audience.</b> Reach 10,000+ healthcare professionals, including doctors, nurses, hospital administrators, and procurement officers.</li>
@@ -719,7 +726,8 @@ summary{font-size:17px;line-height:1.5}
   </div>
 </section>
 
-<section class="sec" id="speakers" style="padding-top:0">
+<!-- Hidden until real content is ready: remove the hidden attribute to show this section. -->
+<section hidden class="sec" id="speakers" style="padding-top:0">
   <div class="wrap">
     <div class="band rv on-dark">
       <img src="/images/conference.jpg" alt="Speaker presenting on a conference stage" loading="lazy" width="1200" height="912">
@@ -741,7 +749,8 @@ summary{font-size:17px;line-height:1.5}
   </div>
 </section>
 
-<section class="sec" id="sponsors">
+<!-- Hidden until real content is ready: remove the hidden attribute to show this section. -->
+<section hidden class="sec" id="sponsors">
   <div class="wrap">
     <div class="sec-head rv">
       <div><span class="eyebrow">Sponsors &amp; partners</span><h2 class="h2">Partner <span class="serif">with us.</span></h2></div>
@@ -756,7 +765,8 @@ summary{font-size:17px;line-height:1.5}
   </div>
 </section>
 
-<section class="sec" id="news" style="background:var(--soft)">
+<!-- Hidden until real content is ready: remove the hidden attribute to show this section. -->
+<section hidden class="sec" id="news" style="background:var(--soft)">
   <div class="wrap">
     <div class="sec-head rv">
       <div><span class="eyebrow">News &amp; events</span><h2 class="h2">Stay in <span class="serif">the loop.</span></h2></div>
@@ -835,10 +845,12 @@ summary{font-size:17px;line-height:1.5}
   <div class="wrap">
     <div class="sec-head rv">
       <div><span class="eyebrow">Contact</span><h2 class="h2">Get in <span class="serif">touch.</span></h2></div>
+      <p class="lead">Have a question or inquiry? Send us a message.</p>
     </div>
     <div class="two">
       <div class="card rv"><small>Phone</small><h3><a href="tel:+23414536789">+234 1 453 6789</a></h3></div>
-      <div class="card rv d1"><small>Address</small><h3>21, Sylvia Crescent, Anthony Village, Lagos</h3></div>
+      <div class="card rv d1"><small>Email</small><h3 class="em"><a href="mailto:nigeriahealthexpo@gmail.com">nigeriahealthexpo@gmail.com</a></h3></div>
+      <div class="card rv d2"><small>Address</small><h3>21, Sylvia Crescent, Anthony Village, Lagos</h3></div>
     </div>
   </div>
 </section>
@@ -868,14 +880,14 @@ summary{font-size:17px;line-height:1.5}
     <div class="ftr-g">
       <div><a href="#top" class="logo logo-plate" aria-label="Nigeria Health Expo home"><img class="logo-img" src="/images/logo.png" alt="Nigeria Health Expo — Global Health. Local Impact." width="220" height="81"></a>
         <p style="margin-top:20px;max-width:360px">Connecting Global Innovation With Africa’s Healthcare Needs.</p>
-        <p style="margin-top:22px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:#F5A524">Powered by</p>
+        <p style="margin-top:22px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--lime)">Powered by</p>
         <div class="logo-plate partners"><img src="/images/hfn-logo.png" alt="Healthcare Federation of Nigeria (HFN)" width="52" height="43"><img src="/images/ghpr-logo.png" alt="Global Health Project &amp; Resources (GHPR)" width="92" height="34"></div>
         <!-- Social links: add the real profile URLs, then remove the hidden attribute from this block. -->
         <div class="social" hidden><p style="margin-top:20px;color:#fff;font-weight:600">Join our community</p><ul class="social-l"><li><a href="#" target="_blank" rel="noopener">Facebook</a></li><li><a href="#" target="_blank" rel="noopener">Twitter</a></li><li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="#" target="_blank" rel="noopener">Instagram</a></li></ul></div>
       </div>
-      <div><h4>Event</h4><ul><li><a href="#about">About</a></li><li><a href="#sectors">Exhibition</a></li><li><a href="#programme">Conference</a></li><li><a href="#speakers">Speakers</a></li></ul></div>
-      <div><h4>Take part</h4><ul><li><a href="#register">Register</a></li><li><a href="#exhibit">Exhibit</a></li><li><a href="#sponsors">Sponsor</a></li><li><a href="#venue">Venue</a></li></ul></div>
-      <div><h4>Contact</h4><ul><li><a href="tel:+23414536789">+234 1 453 6789</a></li><li>21, Sylvia Crescent, Anthony Village, Lagos</li></ul></div>
+      <div><h4>Event</h4><ul><li><a href="#about">About</a></li><li><a href="#sectors">Exhibition</a></li><li><a href="#programme">Conference</a></li></ul></div>
+      <div><h4>Take part</h4><ul><li><a href="#register">Register</a></li><li><a href="#exhibit">Exhibit &amp; sponsor</a></li><li><a href="#venue">Venue</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="tel:+23414536789">+234 1 453 6789</a></li><li><a href="mailto:nigeriahealthexpo@gmail.com">nigeriahealthexpo@gmail.com</a></li><li>21, Sylvia Crescent, Anthony Village, Lagos</li></ul></div>
     </div>
     <div class="ftr-b"><span>© <span id="yr"></span> Nigeria Health Expo. All rights reserved.</span><span>Powered by HFN &amp; GHPR</span></div>
   </div>
